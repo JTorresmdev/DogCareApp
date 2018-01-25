@@ -1,0 +1,12 @@
+PODS:
+  - UICollectionViewGallery (0.1.8)
+
+DEPENDENCIES:
+  - UICollectionViewGallery
+
+SPEC CHECKSUMS:
+  UICollectionViewGallery: 08b9dc0eefd0da3a30a21b73c24e63a00d76a7bc
+
+PODFILE CHECKSUM: b40de15277a44850f75ba0cebbe895a5c48254bf
+
+COCOAPODS: 1.4.0
