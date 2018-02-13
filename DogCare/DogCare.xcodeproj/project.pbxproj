@@ -12,6 +12,7 @@
 		7A2D5F09201864E20007DCDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2D5F08201864E20007DCDF /* Assets.xcassets */; };
 		7A2D5F0C201864E20007DCDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2D5F0A201864E20007DCDF /* LaunchScreen.storyboard */; };
 		7A2D5F14201864F90007DCDF /* MainDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D5F13201864F90007DCDF /* MainDogViewController.swift */; };
+		7A31BCE42032ADF600EBB144 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */; };
 		7AF9F8182019B54500C0F8CD /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9F8172019B54500C0F8CD /* MainCollectionViewCell.swift */; };
 		7AF9F81A2019B5EE00C0F8CD /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF9F8192019B5EE00C0F8CD /* CustomCell.xib */; };
 		DE8D3F073D6741AC12F864C0 /* Pods_DogCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05666E6C62F6C0D9824AE8F9 /* Pods_DogCare.framework */; };
@@ -28,6 +29,7 @@
 		7A2D5F0B201864E20007DCDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A2D5F0D201864E20007DCDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A2D5F13201864F90007DCDF /* MainDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDogViewController.swift; sourceTree = "<group>"; };
+		7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		7AF9F8172019B54500C0F8CD /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		7AF9F8192019B5EE00C0F8CD /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 				7A2D5F13201864F90007DCDF /* MainDogViewController.swift */,
 				7AF9F8172019B54500C0F8CD /* MainCollectionViewCell.swift */,
 				7AF9F8192019B5EE00C0F8CD /* CustomCell.xib */,
+				7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */,
 			);
 			path = DogCare;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A31BCE42032ADF600EBB144 /* AboutUsViewController.swift in Sources */,
 				7A2D5F14201864F90007DCDF /* MainDogViewController.swift in Sources */,
 				7AF9F8182019B54500C0F8CD /* MainCollectionViewCell.swift in Sources */,
 				7A2D5F02201864E20007DCDF /* AppDelegate.swift in Sources */,
