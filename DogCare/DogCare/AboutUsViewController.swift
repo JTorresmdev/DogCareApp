@@ -10,26 +10,49 @@ import UIKit
 
 class AboutUsViewController: UIViewController {
 
+    @IBOutlet weak var websiteBox: UIView!
+    @IBOutlet weak var themeSongBox: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        designSetup()
+        //Creating tap gestures for the view boxes
+        let websiteTap = UITapGestureRecognizer(target: self, action: #selector(websiteClicked))
+        websiteBox.addGestureRecognizer(websiteTap)
+        let themeSongTap = UITapGestureRecognizer(target: self, action: #selector(themeSongClicked))
+        themeSongBox.addGestureRecognizer(themeSongTap)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    
+    
+    //SELECTOR ONCLICKS FOR VIEWS//////////////////
+    @objc func websiteClicked(){
+        //Open website in safari here
+        if let url = URL(string: "http://www.happykids-happypets.com/") {
+            UIApplication.shared.open(url, options: [:])
+        }
+        
     }
-    */
+    @objc func themeSongClicked(){
+        //Checks whether user has the youtube app and if so opens the theme song in youtube app if not in safari
+        let youtubeURL = URL(string: "youtube://watch?v=Kbn-dDCzZ3w")!
+        let normalURL = URL(string: "https://www.youtube.com/watch?v=Kbn-dDCzZ3w")!
+        if UIApplication.shared.canOpenURL(youtubeURL) {
+            UIApplication.shared.open(youtubeURL, options: [:])
+        } else {
+            UIApplication.shared.open(normalURL, options: [:])
+        }
+    
+    }
+    
+    
+    //DESIGN////////////////
+    func designSetup(){
+        //making rounded corners on the bottom boxes
+        websiteBox.layer.cornerRadius = 20
+        themeSongBox.layer.cornerRadius = 20
+    }
+
 
 }

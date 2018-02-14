@@ -81,9 +81,9 @@
 				7A2D5F0A201864E20007DCDF /* LaunchScreen.storyboard */,
 				7A2D5F0D201864E20007DCDF /* Info.plist */,
 				7A2D5F13201864F90007DCDF /* MainDogViewController.swift */,
+				7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */,
 				7AF9F8172019B54500C0F8CD /* MainCollectionViewCell.swift */,
 				7AF9F8192019B5EE00C0F8CD /* CustomCell.xib */,
-				7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */,
 			);
 			path = DogCare;
 			sourceTree = "<group>";

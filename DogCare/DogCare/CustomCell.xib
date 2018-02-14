@@ -20,17 +20,35 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouZ-GR-qgX">
                     <rect key="frame" x="10" y="54" width="480" height="402"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lG2-SY-Odd">
-                            <rect key="frame" x="20" y="20" width="80.333333333333329" height="67"/>
-                            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderDog" translatesAutoresizingMaskIntoConstraints="NO" id="lG2-SY-Odd">
+                            <rect key="frame" x="20" y="80.666666666666657" width="440" height="301.33333333333337"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOG CARE HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sWI-yy-fQ8">
+                            <rect key="frame" x="20" y="19.999999999999996" width="189" height="40.666666666666657"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <color key="textColor" red="0.99114913100000002" green="0.98142047980000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pKA-gW-YVm">
+                            <rect key="frame" x="436.33333333333331" y="19.999999999999996" width="23.666666666666686" height="45.666666666666657"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
+                            <color key="textColor" red="0.99114913100000002" green="0.98142047980000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="1" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="lG2-SY-Odd" firstAttribute="width" secondItem="ouZ-GR-qgX" secondAttribute="width" multiplier="1/6" id="RSb-rL-QSO"/>
+                        <constraint firstItem="lG2-SY-Odd" firstAttribute="top" secondItem="pKA-gW-YVm" secondAttribute="bottom" constant="15" id="7B5-0Q-axP"/>
+                        <constraint firstItem="sWI-yy-fQ8" firstAttribute="leading" secondItem="lG2-SY-Odd" secondAttribute="leading" id="HCU-IU-0Ea"/>
+                        <constraint firstItem="lG2-SY-Odd" firstAttribute="top" secondItem="sWI-yy-fQ8" secondAttribute="bottom" constant="20" id="a3x-DD-L9k"/>
+                        <constraint firstItem="pKA-gW-YVm" firstAttribute="top" secondItem="ouZ-GR-qgX" secondAttribute="top" constant="20" id="akS-NZ-AHP"/>
+                        <constraint firstItem="pKA-gW-YVm" firstAttribute="trailing" secondItem="lG2-SY-Odd" secondAttribute="trailing" id="gsk-54-omJ"/>
                         <constraint firstItem="lG2-SY-Odd" firstAttribute="leading" secondItem="ouZ-GR-qgX" secondAttribute="leading" constant="20" id="j5I-H8-60i"/>
-                        <constraint firstItem="lG2-SY-Odd" firstAttribute="top" secondItem="ouZ-GR-qgX" secondAttribute="top" constant="20" id="k5h-ML-tyH"/>
-                        <constraint firstItem="lG2-SY-Odd" firstAttribute="height" secondItem="ouZ-GR-qgX" secondAttribute="height" multiplier="1/6" id="l0E-sU-JoD"/>
+                        <constraint firstItem="lG2-SY-Odd" firstAttribute="height" secondItem="ouZ-GR-qgX" secondAttribute="height" multiplier="3:4" id="l0E-sU-JoD"/>
+                        <constraint firstItem="sWI-yy-fQ8" firstAttribute="top" secondItem="ouZ-GR-qgX" secondAttribute="top" constant="20" id="qP8-uY-t3F"/>
+                        <constraint firstAttribute="bottom" secondItem="lG2-SY-Odd" secondAttribute="bottom" constant="20" id="x8q-Gx-Sqe"/>
+                        <constraint firstAttribute="trailing" secondItem="lG2-SY-Odd" secondAttribute="trailing" constant="20" id="xS3-ra-gnP"/>
                     </constraints>
                 </view>
             </subviews>
@@ -49,4 +67,7 @@
             <point key="canvasLocation" x="-29" y="46"/>
         </view>
     </objects>
+    <resources>
+        <image name="placeholderDog" width="500" height="500"/>
+    </resources>
 </document>
