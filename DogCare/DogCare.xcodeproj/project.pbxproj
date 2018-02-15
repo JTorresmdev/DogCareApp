@@ -13,7 +13,23 @@
 		7A2D5F0C201864E20007DCDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2D5F0A201864E20007DCDF /* LaunchScreen.storyboard */; };
 		7A2D5F14201864F90007DCDF /* MainDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D5F13201864F90007DCDF /* MainDogViewController.swift */; };
 		7A31BCE42032ADF600EBB144 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */; };
-		7AF9F8182019B54500C0F8CD /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF9F8172019B54500C0F8CD /* MainCollectionViewCell.swift */; };
+		7A31BCEA2034F38A00EBB144 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A31BCE92034F38A00EBB144 /* DetailCell.xib */; };
+		7AA619F820351F22009348B0 /* CardClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA619F720351F22009348B0 /* CardClass.swift */; };
+		7AA61A0720356EED009348B0 /* red2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619F920356EEC009348B0 /* red2.mp3 */; };
+		7AA61A0820356EED009348B0 /* 13 Red 13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FA20356EEC009348B0 /* 13 Red 13.mp3 */; };
+		7AA61A0920356EED009348B0 /* 10 Red 10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FB20356EEC009348B0 /* 10 Red 10.mp3 */; };
+		7AA61A0A20356EED009348B0 /* 12 Red 12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FC20356EEC009348B0 /* 12 Red 12.mp3 */; };
+		7AA61A0B20356EED009348B0 /* red6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FD20356EEC009348B0 /* red6.mp3 */; };
+		7AA61A0C20356EED009348B0 /* red7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FE20356EEC009348B0 /* red7.mp3 */; };
+		7AA61A0D20356EED009348B0 /* 14 Red 14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FF20356EED009348B0 /* 14 Red 14.mp3 */; };
+		7AA61A0E20356EED009348B0 /* red3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA61A0020356EED009348B0 /* red3.mp3 */; };
+		7AA61A0F20356EED009348B0 /* 11 Red 11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA61A0120356EED009348B0 /* 11 Red 11.mp3 */; };
+		7AA61A1020356EED009348B0 /* red5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA61A0220356EED009348B0 /* red5.mp3 */; };
+		7AA61A1120356EED009348B0 /* red4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA61A0320356EED009348B0 /* red4.mp3 */; };
+		7AA61A1220356EED009348B0 /* red9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA61A0420356EED009348B0 /* red9.mp3 */; };
+		7AA61A1320356EEE009348B0 /* red8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA61A0520356EED009348B0 /* red8.mp3 */; };
+		7AA61A1420356EEE009348B0 /* red1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA61A0620356EED009348B0 /* red1.mp3 */; };
+		7AA61A1720356F3A009348B0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA61A1620356F3A009348B0 /* AVFoundation.framework */; };
 		7AF9F81A2019B5EE00C0F8CD /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF9F8192019B5EE00C0F8CD /* CustomCell.xib */; };
 		DE8D3F073D6741AC12F864C0 /* Pods_DogCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05666E6C62F6C0D9824AE8F9 /* Pods_DogCare.framework */; };
 /* End PBXBuildFile section */
@@ -30,7 +46,23 @@
 		7A2D5F0D201864E20007DCDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A2D5F13201864F90007DCDF /* MainDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDogViewController.swift; sourceTree = "<group>"; };
 		7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
-		7AF9F8172019B54500C0F8CD /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		7A31BCE92034F38A00EBB144 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		7AA619F720351F22009348B0 /* CardClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardClass.swift; sourceTree = "<group>"; };
+		7AA619F920356EEC009348B0 /* red2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red2.mp3; sourceTree = "<group>"; };
+		7AA619FA20356EEC009348B0 /* 13 Red 13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13 Red 13.mp3"; sourceTree = "<group>"; };
+		7AA619FB20356EEC009348B0 /* 10 Red 10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 Red 10.mp3"; sourceTree = "<group>"; };
+		7AA619FC20356EEC009348B0 /* 12 Red 12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12 Red 12.mp3"; sourceTree = "<group>"; };
+		7AA619FD20356EEC009348B0 /* red6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red6.mp3; sourceTree = "<group>"; };
+		7AA619FE20356EEC009348B0 /* red7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red7.mp3; sourceTree = "<group>"; };
+		7AA619FF20356EED009348B0 /* 14 Red 14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "14 Red 14.mp3"; sourceTree = "<group>"; };
+		7AA61A0020356EED009348B0 /* red3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red3.mp3; sourceTree = "<group>"; };
+		7AA61A0120356EED009348B0 /* 11 Red 11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11 Red 11.mp3"; sourceTree = "<group>"; };
+		7AA61A0220356EED009348B0 /* red5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red5.mp3; sourceTree = "<group>"; };
+		7AA61A0320356EED009348B0 /* red4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red4.mp3; sourceTree = "<group>"; };
+		7AA61A0420356EED009348B0 /* red9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red9.mp3; sourceTree = "<group>"; };
+		7AA61A0520356EED009348B0 /* red8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red8.mp3; sourceTree = "<group>"; };
+		7AA61A0620356EED009348B0 /* red1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red1.mp3; sourceTree = "<group>"; };
+		7AA61A1620356F3A009348B0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7AF9F8192019B5EE00C0F8CD /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA61A1720356F3A009348B0 /* AVFoundation.framework in Frameworks */,
 				DE8D3F073D6741AC12F864C0 /* Pods_DogCare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +82,7 @@
 		40C50C77D272DCB45B335377 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7AA61A1620356F3A009348B0 /* AVFoundation.framework */,
 				05666E6C62F6C0D9824AE8F9 /* Pods_DogCare.framework */,
 			);
 			name = Frameworks;
@@ -75,17 +109,40 @@
 		7A2D5F00201864E20007DCDF /* DogCare */ = {
 			isa = PBXGroup;
 			children = (
+				7AA61A1520356EFD009348B0 /* audio */,
 				7A2D5F01201864E20007DCDF /* AppDelegate.swift */,
-				7A2D5F05201864E20007DCDF /* Main.storyboard */,
-				7A2D5F08201864E20007DCDF /* Assets.xcassets */,
-				7A2D5F0A201864E20007DCDF /* LaunchScreen.storyboard */,
-				7A2D5F0D201864E20007DCDF /* Info.plist */,
-				7A2D5F13201864F90007DCDF /* MainDogViewController.swift */,
 				7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */,
-				7AF9F8172019B54500C0F8CD /* MainCollectionViewCell.swift */,
+				7A2D5F0A201864E20007DCDF /* LaunchScreen.storyboard */,
+				7A2D5F08201864E20007DCDF /* Assets.xcassets */,
+				7A2D5F0D201864E20007DCDF /* Info.plist */,
+				7A2D5F05201864E20007DCDF /* Main.storyboard */,
+				7A2D5F13201864F90007DCDF /* MainDogViewController.swift */,
 				7AF9F8192019B5EE00C0F8CD /* CustomCell.xib */,
+				7A31BCE92034F38A00EBB144 /* DetailCell.xib */,
+				7AA619F720351F22009348B0 /* CardClass.swift */,
 			);
 			path = DogCare;
+			sourceTree = "<group>";
+		};
+		7AA61A1520356EFD009348B0 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				7AA61A0620356EED009348B0 /* red1.mp3 */,
+				7AA619F920356EEC009348B0 /* red2.mp3 */,
+				7AA61A0020356EED009348B0 /* red3.mp3 */,
+				7AA61A0320356EED009348B0 /* red4.mp3 */,
+				7AA61A0220356EED009348B0 /* red5.mp3 */,
+				7AA619FD20356EEC009348B0 /* red6.mp3 */,
+				7AA619FE20356EEC009348B0 /* red7.mp3 */,
+				7AA61A0520356EED009348B0 /* red8.mp3 */,
+				7AA61A0420356EED009348B0 /* red9.mp3 */,
+				7AA619FB20356EEC009348B0 /* 10 Red 10.mp3 */,
+				7AA61A0120356EED009348B0 /* 11 Red 11.mp3 */,
+				7AA619FC20356EEC009348B0 /* 12 Red 12.mp3 */,
+				7AA619FA20356EEC009348B0 /* 13 Red 13.mp3 */,
+				7AA619FF20356EED009348B0 /* 14 Red 14.mp3 */,
+			);
+			path = audio;
 			sourceTree = "<group>";
 		};
 		F3B626FDDF908564A41506EE /* Pods */ = {
@@ -159,10 +216,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AA61A0920356EED009348B0 /* 10 Red 10.mp3 in Resources */,
+				7AA61A1020356EED009348B0 /* red5.mp3 in Resources */,
 				7A2D5F0C201864E20007DCDF /* LaunchScreen.storyboard in Resources */,
+				7AA61A0E20356EED009348B0 /* red3.mp3 in Resources */,
+				7AA61A0A20356EED009348B0 /* 12 Red 12.mp3 in Resources */,
+				7AA61A1320356EEE009348B0 /* red8.mp3 in Resources */,
+				7AA61A0C20356EED009348B0 /* red7.mp3 in Resources */,
+				7AA61A0D20356EED009348B0 /* 14 Red 14.mp3 in Resources */,
+				7AA61A0F20356EED009348B0 /* 11 Red 11.mp3 in Resources */,
 				7A2D5F09201864E20007DCDF /* Assets.xcassets in Resources */,
 				7AF9F81A2019B5EE00C0F8CD /* CustomCell.xib in Resources */,
+				7AA61A0720356EED009348B0 /* red2.mp3 in Resources */,
+				7AA61A1420356EEE009348B0 /* red1.mp3 in Resources */,
+				7AA61A1220356EED009348B0 /* red9.mp3 in Resources */,
 				7A2D5F07201864E20007DCDF /* Main.storyboard in Resources */,
+				7AA61A0B20356EED009348B0 /* red6.mp3 in Resources */,
+				7AA61A1120356EED009348B0 /* red4.mp3 in Resources */,
+				7AA61A0820356EED009348B0 /* 13 Red 13.mp3 in Resources */,
+				7A31BCEA2034F38A00EBB144 /* DetailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +301,7 @@
 			files = (
 				7A31BCE42032ADF600EBB144 /* AboutUsViewController.swift in Sources */,
 				7A2D5F14201864F90007DCDF /* MainDogViewController.swift in Sources */,
-				7AF9F8182019B54500C0F8CD /* MainCollectionViewCell.swift in Sources */,
+				7AA619F820351F22009348B0 /* CardClass.swift in Sources */,
 				7A2D5F02201864E20007DCDF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
