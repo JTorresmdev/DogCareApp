@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="438-Gv-idP">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,18 +16,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainDogViewController" customModule="DogCare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphonexWoodBackground" translatesAutoresizingMaskIntoConstraints="NO" id="P9n-ba-tYp">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JUc-AT-orK">
-                                <rect key="frame" x="0.0" y="183" width="375" height="500"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="632"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" priority="750" constant="500" id="dTW-U6-TUD"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="28g-VG-tpy">
                                     <size key="itemSize" width="182" height="182"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -52,7 +49,7 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQp-bf-lCc">
-                                <rect key="frame" x="146" y="744" width="83" height="34"/>
+                                <rect key="frame" x="165.66666666666666" y="702" width="83" height="34"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="About Us">
@@ -63,9 +60,13 @@
                                     <segue destination="C7o-ZW-SFq" kind="show" id="7Fy-Hq-rlL"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igy-9K-hEB">
-                                <rect key="frame" x="172" y="663" width="30" height="30"/>
-                                <state key="normal" title="Play"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igy-9K-hEB">
+                                <rect key="frame" x="182.66666666666666" y="676" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4eH-Ki-CmR"/>
+                                    <constraint firstAttribute="width" constant="50" id="oPy-EN-So9"/>
+                                </constraints>
+                                <state key="normal" title="Play" image="playButton"/>
                                 <connections>
                                     <action selector="playButtonHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeA-tw-cub"/>
                                 </connections>
@@ -73,6 +74,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="JUc-AT-orK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2mA-fh-8eo"/>
                             <constraint firstItem="JUc-AT-orK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="66K-mU-bZJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gQp-bf-lCc" secondAttribute="bottom" id="CDD-NM-daP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JUc-AT-orK" secondAttribute="trailing" id="Gdh-Ek-DwN"/>
@@ -81,14 +83,15 @@
                             <constraint firstItem="Igy-9K-hEB" firstAttribute="centerX" secondItem="P9n-ba-tYp" secondAttribute="centerX" id="SLu-Aa-fT8"/>
                             <constraint firstItem="P9n-ba-tYp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="StK-rg-Maw"/>
                             <constraint firstItem="gQp-bf-lCc" firstAttribute="centerX" secondItem="JUc-AT-orK" secondAttribute="centerX" id="hXA-Xy-cEN"/>
-                            <constraint firstItem="Igy-9K-hEB" firstAttribute="top" secondItem="JUc-AT-orK" secondAttribute="bottom" constant="-20" id="iYB-pK-2Ek"/>
                             <constraint firstItem="JUc-AT-orK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="qbX-on-b0W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Igy-9K-hEB" secondAttribute="bottom" constant="10" id="t5d-IL-iPH"/>
                             <constraint firstAttribute="bottom" secondItem="P9n-ba-tYp" secondAttribute="bottom" id="vx6-ZK-beh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="qBo-Pc-L57"/>
                     <connections>
+                        <outlet property="aboutUsButton" destination="gQp-bf-lCc" id="Rze-QE-N3c"/>
                         <outlet property="mainCollectionView" destination="JUc-AT-orK" id="e6c-Ha-Boh"/>
                         <outlet property="playButton" destination="Igy-9K-hEB" id="jMD-0s-70H"/>
                     </connections>
@@ -102,20 +105,20 @@
             <objects>
                 <viewController id="C7o-ZW-SFq" customClass="AboutUsViewController" customModule="DogCare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w3Z-1A-fg0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphonexWoodBackground" translatesAutoresizingMaskIntoConstraints="NO" id="1mZ-MO-VwB">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1G-X6-qQJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="Is2-kn-dpK"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Mission" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfN-xe-boU">
-                                <rect key="frame" x="20" y="128" width="335" height="47"/>
+                                <rect key="frame" x="20" y="104" width="374" height="47"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <color key="textColor" red="0.9882352941176471" green="0.93725490196078431" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -123,7 +126,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tOX-zq-wCv">
-                                <rect key="frame" x="20" y="184.99999999999997" width="335" height="306.33333333333326"/>
+                                <rect key="frame" x="20" y="160.99999999999997" width="374" height="306.33333333333326"/>
                                 <string key="text">HappyKids-HappyPets' main goal is to educate kids about humane treatment of animals, pet over-population, and getting the right dog for your family so it doesn't end up in a shelter.
 
 Our Mission is to see a world where where children and animals grow up happy and safe; where kids experience peace, kindness, and compassion for themselves and all other beings.  – that’s what Happy Kids-Happy Pets is all about. 
@@ -136,13 +139,13 @@ Our Motto: Treat All People and All Animals Exactly How YOU Want to Be Treated. 
                                 <size key="shadowOffset" width="0.59999999999999998" height="0.59999999999999998"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ot-sC-8AT">
-                                <rect key="frame" x="20" y="568.33333333333337" width="335" height="189.66666666666663"/>
+                                <rect key="frame" x="20" y="544.33333333333337" width="374" height="171.66666666666663"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caw-WA-l6V">
-                                        <rect key="frame" x="176.33333333333334" y="20" width="150.00000000000003" height="150"/>
+                                        <rect key="frame" x="205.66666666666663" y="20" width="150" height="150"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Theme Song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8Pz-dj-JhR">
-                                                <rect key="frame" x="5" y="63" width="140" height="24"/>
+                                                <rect key="frame" x="13.999999999999993" y="63" width="122.33333333333331" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                                 <color key="textColor" red="0.99114913100000002" green="0.98142047980000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -153,16 +156,14 @@ Our Motto: Treat All People and All Animals Exactly How YOU Want to Be Treated. 
                                             <constraint firstItem="8Pz-dj-JhR" firstAttribute="centerY" secondItem="caw-WA-l6V" secondAttribute="centerY" id="5WI-ok-gvj"/>
                                             <constraint firstItem="8Pz-dj-JhR" firstAttribute="centerX" secondItem="caw-WA-l6V" secondAttribute="centerX" id="AaR-xA-feq"/>
                                             <constraint firstAttribute="height" constant="150" id="OkC-gH-m7q"/>
-                                            <constraint firstAttribute="trailing" secondItem="8Pz-dj-JhR" secondAttribute="trailing" constant="5" id="o2g-1r-o0g"/>
-                                            <constraint firstItem="8Pz-dj-JhR" firstAttribute="leading" secondItem="caw-WA-l6V" secondAttribute="leading" constant="5" id="q9K-19-hpq"/>
                                             <constraint firstAttribute="width" constant="150" id="ytV-ha-S2Q"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kx0-FH-6eM">
-                                        <rect key="frame" x="8.6666666666666714" y="20" width="150" height="150"/>
+                                        <rect key="frame" x="18.333333333333343" y="20" width="150" height="150"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="18b-q7-Zq4">
-                                                <rect key="frame" x="5" y="63" width="140" height="24"/>
+                                                <rect key="frame" x="34.999999999999993" y="63" width="80.333333333333314" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                                 <color key="textColor" red="0.99114913102171032" green="0.98142047982172442" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -171,10 +172,8 @@ Our Motto: Treat All People and All Animals Exactly How YOU Want to Be Treated. 
                                         <color key="backgroundColor" red="1" green="0.054901960784313725" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="1bZ-gH-GzN"/>
-                                            <constraint firstItem="18b-q7-Zq4" firstAttribute="leading" secondItem="kx0-FH-6eM" secondAttribute="leading" constant="5" id="YAI-kF-GKQ"/>
                                             <constraint firstItem="18b-q7-Zq4" firstAttribute="centerY" secondItem="kx0-FH-6eM" secondAttribute="centerY" id="Z3Z-ky-rVY"/>
                                             <constraint firstAttribute="height" constant="150" id="bVd-KU-pB5"/>
-                                            <constraint firstAttribute="trailing" secondItem="18b-q7-Zq4" secondAttribute="trailing" constant="5" id="f6I-qq-PU8"/>
                                             <constraint firstItem="18b-q7-Zq4" firstAttribute="centerX" secondItem="kx0-FH-6eM" secondAttribute="centerX" id="wyD-I3-R0H"/>
                                         </constraints>
                                     </view>
@@ -188,7 +187,7 @@ Our Motto: Treat All People and All Animals Exactly How YOU Want to Be Treated. 
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEu-kI-ETE">
-                                <rect key="frame" x="20" y="511.33333333333326" width="335" height="47"/>
+                                <rect key="frame" x="20" y="487.33333333333331" width="374" height="46.999999999999943"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
                                 <color key="textColor" red="0.98823529409999999" green="0.93725490199999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -235,7 +234,7 @@ Our Motto: Treat All People and All Animals Exactly How YOU Want to Be Treated. 
             <objects>
                 <navigationController id="438-Gv-idP" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6ez-0v-h2b">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -249,5 +248,6 @@ Our Motto: Treat All People and All Animals Exactly How YOU Want to Be Treated. 
     </scenes>
     <resources>
         <image name="iphonexWoodBackground" width="1" height="1"/>
+        <image name="playButton" width="256" height="256"/>
     </resources>
 </document>

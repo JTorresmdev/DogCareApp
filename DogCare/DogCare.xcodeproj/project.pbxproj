@@ -7,6 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A09871A203EA0300046EE57 /* red22.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09870C203EA02E0046EE57 /* red22.mp3 */; };
+		7A09871B203EA0300046EE57 /* red19.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09870D203EA02F0046EE57 /* red19.mp3 */; };
+		7A09871C203EA0300046EE57 /* red20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09870E203EA02F0046EE57 /* red20.mp3 */; };
+		7A09871D203EA0300046EE57 /* red16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09870F203EA02F0046EE57 /* red16.mp3 */; };
+		7A09871E203EA0300046EE57 /* red21.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098710203EA02F0046EE57 /* red21.mp3 */; };
+		7A09871F203EA0300046EE57 /* red28.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098711203EA02F0046EE57 /* red28.mp3 */; };
+		7A098720203EA0300046EE57 /* red17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098712203EA02F0046EE57 /* red17.mp3 */; };
+		7A098721203EA0300046EE57 /* red24.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098713203EA02F0046EE57 /* red24.mp3 */; };
+		7A098722203EA0300046EE57 /* red18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098714203EA02F0046EE57 /* red18.mp3 */; };
+		7A098723203EA0300046EE57 /* red15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098715203EA02F0046EE57 /* red15.mp3 */; };
+		7A098724203EA0300046EE57 /* red25.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098716203EA02F0046EE57 /* red25.mp3 */; };
+		7A098725203EA0300046EE57 /* red26.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098717203EA02F0046EE57 /* red26.mp3 */; };
+		7A098726203EA0300046EE57 /* red23.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098718203EA0300046EE57 /* red23.mp3 */; };
+		7A098727203EA0300046EE57 /* red27.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098719203EA0300046EE57 /* red27.mp3 */; };
+		7A098736203EA03C0046EE57 /* red29.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098728203EA03A0046EE57 /* red29.mp3 */; };
+		7A098737203EA03C0046EE57 /* red39.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098729203EA03B0046EE57 /* red39.mp3 */; };
+		7A098738203EA03C0046EE57 /* red37.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09872A203EA03B0046EE57 /* red37.mp3 */; };
+		7A098739203EA03C0046EE57 /* red40.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09872B203EA03B0046EE57 /* red40.mp3 */; };
+		7A09873A203EA03C0046EE57 /* red36.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09872C203EA03B0046EE57 /* red36.mp3 */; };
+		7A09873B203EA03C0046EE57 /* red41.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09872D203EA03B0046EE57 /* red41.mp3 */; };
+		7A09873C203EA03C0046EE57 /* red42.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09872E203EA03B0046EE57 /* red42.mp3 */; };
+		7A09873D203EA03C0046EE57 /* red38.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09872F203EA03B0046EE57 /* red38.mp3 */; };
+		7A09873E203EA03C0046EE57 /* red35.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098730203EA03B0046EE57 /* red35.mp3 */; };
+		7A09873F203EA03C0046EE57 /* red31.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098731203EA03B0046EE57 /* red31.mp3 */; };
+		7A098740203EA03C0046EE57 /* red34.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098732203EA03B0046EE57 /* red34.mp3 */; };
+		7A098741203EA03C0046EE57 /* red30.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098733203EA03C0046EE57 /* red30.mp3 */; };
+		7A098742203EA03C0046EE57 /* red32.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098734203EA03C0046EE57 /* red32.mp3 */; };
+		7A098743203EA03C0046EE57 /* red33.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098735203EA03C0046EE57 /* red33.mp3 */; };
+		7A098751203EA0480046EE57 /* red53.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098744203EA0470046EE57 /* red53.mp3 */; };
+		7A098752203EA0480046EE57 /* red51.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098745203EA0470046EE57 /* red51.mp3 */; };
+		7A098753203EA0480046EE57 /* red52.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098746203EA0470046EE57 /* red52.mp3 */; };
+		7A098754203EA0480046EE57 /* red50.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098747203EA0470046EE57 /* red50.mp3 */; };
+		7A098755203EA0480046EE57 /* red55.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098748203EA0470046EE57 /* red55.mp3 */; };
+		7A098756203EA0480046EE57 /* red47.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098749203EA0470046EE57 /* red47.mp3 */; };
+		7A098757203EA0480046EE57 /* red43.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09874A203EA0470046EE57 /* red43.mp3 */; };
+		7A098758203EA0480046EE57 /* red48.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09874B203EA0470046EE57 /* red48.mp3 */; };
+		7A098759203EA0480046EE57 /* red44.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09874C203EA0480046EE57 /* red44.mp3 */; };
+		7A09875A203EA0480046EE57 /* red49.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09874D203EA0480046EE57 /* red49.mp3 */; };
+		7A09875B203EA0480046EE57 /* red46.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09874E203EA0480046EE57 /* red46.mp3 */; };
+		7A09875C203EA0480046EE57 /* red54.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A09874F203EA0480046EE57 /* red54.mp3 */; };
+		7A09875D203EA0480046EE57 /* red45.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A098750203EA0480046EE57 /* red45.mp3 */; };
 		7A2D5F02201864E20007DCDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D5F01201864E20007DCDF /* AppDelegate.swift */; };
 		7A2D5F07201864E20007DCDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A2D5F05201864E20007DCDF /* Main.storyboard */; };
 		7A2D5F09201864E20007DCDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A2D5F08201864E20007DCDF /* Assets.xcassets */; };
@@ -16,14 +57,14 @@
 		7A31BCEA2034F38A00EBB144 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A31BCE92034F38A00EBB144 /* DetailCell.xib */; };
 		7AA619F820351F22009348B0 /* CardClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA619F720351F22009348B0 /* CardClass.swift */; };
 		7AA61A0720356EED009348B0 /* red2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619F920356EEC009348B0 /* red2.mp3 */; };
-		7AA61A0820356EED009348B0 /* 13 Red 13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FA20356EEC009348B0 /* 13 Red 13.mp3 */; };
-		7AA61A0920356EED009348B0 /* 10 Red 10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FB20356EEC009348B0 /* 10 Red 10.mp3 */; };
-		7AA61A0A20356EED009348B0 /* 12 Red 12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FC20356EEC009348B0 /* 12 Red 12.mp3 */; };
+		7AA61A0820356EED009348B0 /* red13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FA20356EEC009348B0 /* red13.mp3 */; };
+		7AA61A0920356EED009348B0 /* red10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FB20356EEC009348B0 /* red10.mp3 */; };
+		7AA61A0A20356EED009348B0 /* red12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FC20356EEC009348B0 /* red12.mp3 */; };
 		7AA61A0B20356EED009348B0 /* red6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FD20356EEC009348B0 /* red6.mp3 */; };
 		7AA61A0C20356EED009348B0 /* red7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FE20356EEC009348B0 /* red7.mp3 */; };
-		7AA61A0D20356EED009348B0 /* 14 Red 14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FF20356EED009348B0 /* 14 Red 14.mp3 */; };
+		7AA61A0D20356EED009348B0 /* red14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA619FF20356EED009348B0 /* red14.mp3 */; };
 		7AA61A0E20356EED009348B0 /* red3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA61A0020356EED009348B0 /* red3.mp3 */; };
-		7AA61A0F20356EED009348B0 /* 11 Red 11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA61A0120356EED009348B0 /* 11 Red 11.mp3 */; };
+		7AA61A0F20356EED009348B0 /* red11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA61A0120356EED009348B0 /* red11.mp3 */; };
 		7AA61A1020356EED009348B0 /* red5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA61A0220356EED009348B0 /* red5.mp3 */; };
 		7AA61A1120356EED009348B0 /* red4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA61A0320356EED009348B0 /* red4.mp3 */; };
 		7AA61A1220356EED009348B0 /* red9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7AA61A0420356EED009348B0 /* red9.mp3 */; };
@@ -38,6 +79,47 @@
 		05666E6C62F6C0D9824AE8F9 /* Pods_DogCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4849DC622E9FEE7651BB770A /* Pods-DogCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCare.release.xcconfig"; path = "Pods/Target Support Files/Pods-DogCare/Pods-DogCare.release.xcconfig"; sourceTree = "<group>"; };
 		6884EBDEE5AA9CC60BC18D55 /* Pods-DogCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogCare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DogCare/Pods-DogCare.debug.xcconfig"; sourceTree = "<group>"; };
+		7A09870C203EA02E0046EE57 /* red22.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red22.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red22.mp3"; sourceTree = "<group>"; };
+		7A09870D203EA02F0046EE57 /* red19.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red19.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red19.mp3"; sourceTree = "<group>"; };
+		7A09870E203EA02F0046EE57 /* red20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red20.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red20.mp3"; sourceTree = "<group>"; };
+		7A09870F203EA02F0046EE57 /* red16.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red16.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red16.mp3"; sourceTree = "<group>"; };
+		7A098710203EA02F0046EE57 /* red21.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red21.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red21.mp3"; sourceTree = "<group>"; };
+		7A098711203EA02F0046EE57 /* red28.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red28.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red28.mp3"; sourceTree = "<group>"; };
+		7A098712203EA02F0046EE57 /* red17.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red17.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red17.mp3"; sourceTree = "<group>"; };
+		7A098713203EA02F0046EE57 /* red24.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red24.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red24.mp3"; sourceTree = "<group>"; };
+		7A098714203EA02F0046EE57 /* red18.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red18.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red18.mp3"; sourceTree = "<group>"; };
+		7A098715203EA02F0046EE57 /* red15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red15.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red15.mp3"; sourceTree = "<group>"; };
+		7A098716203EA02F0046EE57 /* red25.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red25.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red25.mp3"; sourceTree = "<group>"; };
+		7A098717203EA02F0046EE57 /* red26.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red26.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red26.mp3"; sourceTree = "<group>"; };
+		7A098718203EA0300046EE57 /* red23.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red23.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red23.mp3"; sourceTree = "<group>"; };
+		7A098719203EA0300046EE57 /* red27.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red27.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/Red-Caring-for-Your-Dog-15-28/red27.mp3"; sourceTree = "<group>"; };
+		7A098728203EA03A0046EE57 /* red29.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red29.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red29.mp3"; sourceTree = "<group>"; };
+		7A098729203EA03B0046EE57 /* red39.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red39.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red39.mp3"; sourceTree = "<group>"; };
+		7A09872A203EA03B0046EE57 /* red37.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red37.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red37.mp3"; sourceTree = "<group>"; };
+		7A09872B203EA03B0046EE57 /* red40.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red40.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red40.mp3"; sourceTree = "<group>"; };
+		7A09872C203EA03B0046EE57 /* red36.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red36.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red36.mp3"; sourceTree = "<group>"; };
+		7A09872D203EA03B0046EE57 /* red41.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red41.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red41.mp3"; sourceTree = "<group>"; };
+		7A09872E203EA03B0046EE57 /* red42.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red42.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red42.mp3"; sourceTree = "<group>"; };
+		7A09872F203EA03B0046EE57 /* red38.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red38.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red38.mp3"; sourceTree = "<group>"; };
+		7A098730203EA03B0046EE57 /* red35.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red35.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red35.mp3"; sourceTree = "<group>"; };
+		7A098731203EA03B0046EE57 /* red31.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red31.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red31.mp3"; sourceTree = "<group>"; };
+		7A098732203EA03B0046EE57 /* red34.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red34.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red34.mp3"; sourceTree = "<group>"; };
+		7A098733203EA03C0046EE57 /* red30.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red30.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red30.mp3"; sourceTree = "<group>"; };
+		7A098734203EA03C0046EE57 /* red32.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red32.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red32.mp3"; sourceTree = "<group>"; };
+		7A098735203EA03C0046EE57 /* red33.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red33.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-29-42/red33.mp3"; sourceTree = "<group>"; };
+		7A098744203EA0470046EE57 /* red53.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red53.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-43-55/red53.mp3"; sourceTree = "<group>"; };
+		7A098745203EA0470046EE57 /* red51.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red51.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-43-55/red51.mp3"; sourceTree = "<group>"; };
+		7A098746203EA0470046EE57 /* red52.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red52.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-43-55/red52.mp3"; sourceTree = "<group>"; };
+		7A098747203EA0470046EE57 /* red50.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red50.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-43-55/red50.mp3"; sourceTree = "<group>"; };
+		7A098748203EA0470046EE57 /* red55.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red55.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-43-55/red55.mp3"; sourceTree = "<group>"; };
+		7A098749203EA0470046EE57 /* red47.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red47.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-43-55/red47.mp3"; sourceTree = "<group>"; };
+		7A09874A203EA0470046EE57 /* red43.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red43.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-43-55/red43.mp3"; sourceTree = "<group>"; };
+		7A09874B203EA0470046EE57 /* red48.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red48.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-43-55/red48.mp3"; sourceTree = "<group>"; };
+		7A09874C203EA0480046EE57 /* red44.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red44.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-43-55/red44.mp3"; sourceTree = "<group>"; };
+		7A09874D203EA0480046EE57 /* red49.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red49.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-43-55/red49.mp3"; sourceTree = "<group>"; };
+		7A09874E203EA0480046EE57 /* red46.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red46.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-43-55/red46.mp3"; sourceTree = "<group>"; };
+		7A09874F203EA0480046EE57 /* red54.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red54.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-43-55/red54.mp3"; sourceTree = "<group>"; };
+		7A098750203EA0480046EE57 /* red45.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = red45.mp3; path = "../../../../../../../../../Volumes/MyExternal/Work/DogCare/RedCards/Audio/red-caring-for-your-dog-43-55/red45.mp3"; sourceTree = "<group>"; };
 		7A2D5EFE201864E20007DCDF /* DogCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2D5F01201864E20007DCDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A2D5F06201864E20007DCDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,14 +131,14 @@
 		7A31BCE92034F38A00EBB144 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
 		7AA619F720351F22009348B0 /* CardClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardClass.swift; sourceTree = "<group>"; };
 		7AA619F920356EEC009348B0 /* red2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red2.mp3; sourceTree = "<group>"; };
-		7AA619FA20356EEC009348B0 /* 13 Red 13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13 Red 13.mp3"; sourceTree = "<group>"; };
-		7AA619FB20356EEC009348B0 /* 10 Red 10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 Red 10.mp3"; sourceTree = "<group>"; };
-		7AA619FC20356EEC009348B0 /* 12 Red 12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12 Red 12.mp3"; sourceTree = "<group>"; };
+		7AA619FA20356EEC009348B0 /* red13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red13.mp3; sourceTree = "<group>"; };
+		7AA619FB20356EEC009348B0 /* red10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red10.mp3; sourceTree = "<group>"; };
+		7AA619FC20356EEC009348B0 /* red12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red12.mp3; sourceTree = "<group>"; };
 		7AA619FD20356EEC009348B0 /* red6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red6.mp3; sourceTree = "<group>"; };
 		7AA619FE20356EEC009348B0 /* red7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red7.mp3; sourceTree = "<group>"; };
-		7AA619FF20356EED009348B0 /* 14 Red 14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "14 Red 14.mp3"; sourceTree = "<group>"; };
+		7AA619FF20356EED009348B0 /* red14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red14.mp3; sourceTree = "<group>"; };
 		7AA61A0020356EED009348B0 /* red3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red3.mp3; sourceTree = "<group>"; };
-		7AA61A0120356EED009348B0 /* 11 Red 11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11 Red 11.mp3"; sourceTree = "<group>"; };
+		7AA61A0120356EED009348B0 /* red11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red11.mp3; sourceTree = "<group>"; };
 		7AA61A0220356EED009348B0 /* red5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red5.mp3; sourceTree = "<group>"; };
 		7AA61A0320356EED009348B0 /* red4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red4.mp3; sourceTree = "<group>"; };
 		7AA61A0420356EED009348B0 /* red9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red9.mp3; sourceTree = "<group>"; };
@@ -110,16 +192,16 @@
 			isa = PBXGroup;
 			children = (
 				7AA61A1520356EFD009348B0 /* audio */,
-				7A2D5F01201864E20007DCDF /* AppDelegate.swift */,
-				7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */,
-				7A2D5F0A201864E20007DCDF /* LaunchScreen.storyboard */,
 				7A2D5F08201864E20007DCDF /* Assets.xcassets */,
-				7A2D5F0D201864E20007DCDF /* Info.plist */,
-				7A2D5F05201864E20007DCDF /* Main.storyboard */,
+				7AA619F720351F22009348B0 /* CardClass.swift */,
 				7A2D5F13201864F90007DCDF /* MainDogViewController.swift */,
+				7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */,
+				7A2D5F05201864E20007DCDF /* Main.storyboard */,
+				7A2D5F01201864E20007DCDF /* AppDelegate.swift */,
+				7A2D5F0D201864E20007DCDF /* Info.plist */,
 				7AF9F8192019B5EE00C0F8CD /* CustomCell.xib */,
 				7A31BCE92034F38A00EBB144 /* DetailCell.xib */,
-				7AA619F720351F22009348B0 /* CardClass.swift */,
+				7A2D5F0A201864E20007DCDF /* LaunchScreen.storyboard */,
 			);
 			path = DogCare;
 			sourceTree = "<group>";
@@ -127,6 +209,47 @@
 		7AA61A1520356EFD009348B0 /* audio */ = {
 			isa = PBXGroup;
 			children = (
+				7A09874A203EA0470046EE57 /* red43.mp3 */,
+				7A09874C203EA0480046EE57 /* red44.mp3 */,
+				7A098750203EA0480046EE57 /* red45.mp3 */,
+				7A09874E203EA0480046EE57 /* red46.mp3 */,
+				7A098749203EA0470046EE57 /* red47.mp3 */,
+				7A09874B203EA0470046EE57 /* red48.mp3 */,
+				7A09874D203EA0480046EE57 /* red49.mp3 */,
+				7A098747203EA0470046EE57 /* red50.mp3 */,
+				7A098745203EA0470046EE57 /* red51.mp3 */,
+				7A098746203EA0470046EE57 /* red52.mp3 */,
+				7A098744203EA0470046EE57 /* red53.mp3 */,
+				7A09874F203EA0480046EE57 /* red54.mp3 */,
+				7A098748203EA0470046EE57 /* red55.mp3 */,
+				7A098728203EA03A0046EE57 /* red29.mp3 */,
+				7A098733203EA03C0046EE57 /* red30.mp3 */,
+				7A098731203EA03B0046EE57 /* red31.mp3 */,
+				7A098734203EA03C0046EE57 /* red32.mp3 */,
+				7A098735203EA03C0046EE57 /* red33.mp3 */,
+				7A098732203EA03B0046EE57 /* red34.mp3 */,
+				7A098730203EA03B0046EE57 /* red35.mp3 */,
+				7A09872C203EA03B0046EE57 /* red36.mp3 */,
+				7A09872A203EA03B0046EE57 /* red37.mp3 */,
+				7A09872F203EA03B0046EE57 /* red38.mp3 */,
+				7A098729203EA03B0046EE57 /* red39.mp3 */,
+				7A09872B203EA03B0046EE57 /* red40.mp3 */,
+				7A09872D203EA03B0046EE57 /* red41.mp3 */,
+				7A09872E203EA03B0046EE57 /* red42.mp3 */,
+				7A098715203EA02F0046EE57 /* red15.mp3 */,
+				7A09870F203EA02F0046EE57 /* red16.mp3 */,
+				7A098712203EA02F0046EE57 /* red17.mp3 */,
+				7A098714203EA02F0046EE57 /* red18.mp3 */,
+				7A09870D203EA02F0046EE57 /* red19.mp3 */,
+				7A09870E203EA02F0046EE57 /* red20.mp3 */,
+				7A098710203EA02F0046EE57 /* red21.mp3 */,
+				7A09870C203EA02E0046EE57 /* red22.mp3 */,
+				7A098718203EA0300046EE57 /* red23.mp3 */,
+				7A098713203EA02F0046EE57 /* red24.mp3 */,
+				7A098716203EA02F0046EE57 /* red25.mp3 */,
+				7A098717203EA02F0046EE57 /* red26.mp3 */,
+				7A098719203EA0300046EE57 /* red27.mp3 */,
+				7A098711203EA02F0046EE57 /* red28.mp3 */,
 				7AA61A0620356EED009348B0 /* red1.mp3 */,
 				7AA619F920356EEC009348B0 /* red2.mp3 */,
 				7AA61A0020356EED009348B0 /* red3.mp3 */,
@@ -136,11 +259,11 @@
 				7AA619FE20356EEC009348B0 /* red7.mp3 */,
 				7AA61A0520356EED009348B0 /* red8.mp3 */,
 				7AA61A0420356EED009348B0 /* red9.mp3 */,
-				7AA619FB20356EEC009348B0 /* 10 Red 10.mp3 */,
-				7AA61A0120356EED009348B0 /* 11 Red 11.mp3 */,
-				7AA619FC20356EEC009348B0 /* 12 Red 12.mp3 */,
-				7AA619FA20356EEC009348B0 /* 13 Red 13.mp3 */,
-				7AA619FF20356EED009348B0 /* 14 Red 14.mp3 */,
+				7AA619FB20356EEC009348B0 /* red10.mp3 */,
+				7AA61A0120356EED009348B0 /* red11.mp3 */,
+				7AA619FC20356EEC009348B0 /* red12.mp3 */,
+				7AA619FA20356EEC009348B0 /* red13.mp3 */,
+				7AA619FF20356EED009348B0 /* red14.mp3 */,
 			);
 			path = audio;
 			sourceTree = "<group>";
@@ -216,25 +339,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AA61A0920356EED009348B0 /* 10 Red 10.mp3 in Resources */,
+				7A09873E203EA03C0046EE57 /* red35.mp3 in Resources */,
+				7A098752203EA0480046EE57 /* red51.mp3 in Resources */,
+				7A098737203EA03C0046EE57 /* red39.mp3 in Resources */,
+				7AA61A0920356EED009348B0 /* red10.mp3 in Resources */,
 				7AA61A1020356EED009348B0 /* red5.mp3 in Resources */,
 				7A2D5F0C201864E20007DCDF /* LaunchScreen.storyboard in Resources */,
+				7A098743203EA03C0046EE57 /* red33.mp3 in Resources */,
 				7AA61A0E20356EED009348B0 /* red3.mp3 in Resources */,
-				7AA61A0A20356EED009348B0 /* 12 Red 12.mp3 in Resources */,
+				7A09875C203EA0480046EE57 /* red54.mp3 in Resources */,
+				7A098758203EA0480046EE57 /* red48.mp3 in Resources */,
+				7A09871E203EA0300046EE57 /* red21.mp3 in Resources */,
+				7A098756203EA0480046EE57 /* red47.mp3 in Resources */,
+				7AA61A0A20356EED009348B0 /* red12.mp3 in Resources */,
+				7A09871D203EA0300046EE57 /* red16.mp3 in Resources */,
 				7AA61A1320356EEE009348B0 /* red8.mp3 in Resources */,
+				7A098759203EA0480046EE57 /* red44.mp3 in Resources */,
+				7A098739203EA03C0046EE57 /* red40.mp3 in Resources */,
+				7A09871B203EA0300046EE57 /* red19.mp3 in Resources */,
+				7A09871A203EA0300046EE57 /* red22.mp3 in Resources */,
+				7A098724203EA0300046EE57 /* red25.mp3 in Resources */,
+				7A09873F203EA03C0046EE57 /* red31.mp3 in Resources */,
+				7A09871C203EA0300046EE57 /* red20.mp3 in Resources */,
+				7A098740203EA03C0046EE57 /* red34.mp3 in Resources */,
 				7AA61A0C20356EED009348B0 /* red7.mp3 in Resources */,
-				7AA61A0D20356EED009348B0 /* 14 Red 14.mp3 in Resources */,
-				7AA61A0F20356EED009348B0 /* 11 Red 11.mp3 in Resources */,
+				7A098753203EA0480046EE57 /* red52.mp3 in Resources */,
+				7AA61A0D20356EED009348B0 /* red14.mp3 in Resources */,
+				7AA61A0F20356EED009348B0 /* red11.mp3 in Resources */,
 				7A2D5F09201864E20007DCDF /* Assets.xcassets in Resources */,
+				7A09875D203EA0480046EE57 /* red45.mp3 in Resources */,
+				7A098751203EA0480046EE57 /* red53.mp3 in Resources */,
+				7A098726203EA0300046EE57 /* red23.mp3 in Resources */,
 				7AF9F81A2019B5EE00C0F8CD /* CustomCell.xib in Resources */,
 				7AA61A0720356EED009348B0 /* red2.mp3 in Resources */,
+				7A098723203EA0300046EE57 /* red15.mp3 in Resources */,
 				7AA61A1420356EEE009348B0 /* red1.mp3 in Resources */,
+				7A098738203EA03C0046EE57 /* red37.mp3 in Resources */,
 				7AA61A1220356EED009348B0 /* red9.mp3 in Resources */,
 				7A2D5F07201864E20007DCDF /* Main.storyboard in Resources */,
+				7A098754203EA0480046EE57 /* red50.mp3 in Resources */,
+				7A09875A203EA0480046EE57 /* red49.mp3 in Resources */,
+				7A09873A203EA03C0046EE57 /* red36.mp3 in Resources */,
+				7A098757203EA0480046EE57 /* red43.mp3 in Resources */,
+				7A098725203EA0300046EE57 /* red26.mp3 in Resources */,
+				7A098741203EA03C0046EE57 /* red30.mp3 in Resources */,
+				7A09873B203EA03C0046EE57 /* red41.mp3 in Resources */,
+				7A098727203EA0300046EE57 /* red27.mp3 in Resources */,
+				7A098720203EA0300046EE57 /* red17.mp3 in Resources */,
+				7A098736203EA03C0046EE57 /* red29.mp3 in Resources */,
+				7A09871F203EA0300046EE57 /* red28.mp3 in Resources */,
 				7AA61A0B20356EED009348B0 /* red6.mp3 in Resources */,
+				7A09873C203EA03C0046EE57 /* red42.mp3 in Resources */,
 				7AA61A1120356EED009348B0 /* red4.mp3 in Resources */,
-				7AA61A0820356EED009348B0 /* 13 Red 13.mp3 in Resources */,
+				7A098722203EA0300046EE57 /* red18.mp3 in Resources */,
+				7AA61A0820356EED009348B0 /* red13.mp3 in Resources */,
+				7A09875B203EA0480046EE57 /* red46.mp3 in Resources */,
+				7A098742203EA03C0046EE57 /* red32.mp3 in Resources */,
 				7A31BCEA2034F38A00EBB144 /* DetailCell.xib in Resources */,
+				7A09873D203EA03C0046EE57 /* red38.mp3 in Resources */,
+				7A098755203EA0480046EE57 /* red55.mp3 in Resources */,
+				7A098721203EA0300046EE57 /* red24.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

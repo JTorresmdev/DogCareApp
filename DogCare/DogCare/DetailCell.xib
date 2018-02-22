@@ -23,9 +23,9 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="juQ-Rs-a6Z">
                             <rect key="frame" x="25" y="60" width="430" height="380"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kAo-x3-0nX">
-                                    <rect key="frame" x="20" y="30" width="390" height="20.5"/>
-                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kAo-x3-0nX">
+                                    <rect key="frame" x="20" y="25" width="390" height="345"/>
+                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -33,7 +33,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="kAo-x3-0nX" secondAttribute="trailing" constant="20" id="1D8-M8-euq"/>
-                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kAo-x3-0nX" secondAttribute="bottom" constant="10" id="F1Z-sG-bUR"/>
+                                <constraint firstAttribute="bottom" secondItem="kAo-x3-0nX" secondAttribute="bottom" constant="10" id="F1Z-sG-bUR"/>
                                 <constraint firstItem="kAo-x3-0nX" firstAttribute="leading" secondItem="juQ-Rs-a6Z" secondAttribute="leading" constant="20" id="irm-M2-yni"/>
                             </constraints>
                         </view>
@@ -59,7 +59,7 @@
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="kAo-x3-0nX" firstAttribute="top" secondItem="KUd-IW-0fj" secondAttribute="bottom" constant="5" id="4T9-Sx-CCc"/>
+                        <constraint firstItem="kAo-x3-0nX" firstAttribute="top" secondItem="KUd-IW-0fj" secondAttribute="bottom" id="4T9-Sx-CCc"/>
                         <constraint firstAttribute="trailing" secondItem="juQ-Rs-a6Z" secondAttribute="trailing" constant="25" id="LEv-mh-Q8b"/>
                         <constraint firstItem="KiY-yM-BJT" firstAttribute="width" secondItem="guW-hW-V64" secondAttribute="width" multiplier="1:2" id="VIb-TY-e9D"/>
                         <constraint firstItem="KUd-IW-0fj" firstAttribute="leading" secondItem="guW-hW-V64" secondAttribute="leading" constant="10" id="WP5-dB-U35"/>
