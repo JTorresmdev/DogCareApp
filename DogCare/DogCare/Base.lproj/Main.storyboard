@@ -14,7 +14,7 @@
         <!--Main Dog View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainDogViewController" customModule="DogCare" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="MainDogViewController" customModule="DogCare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,17 +22,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphonexWoodBackground" translatesAutoresizingMaskIntoConstraints="NO" id="P9n-ba-tYp">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JUc-AT-orK">
-                                <rect key="frame" x="0.0" y="84" width="414" height="632"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JUc-AT-orK">
+                                <rect key="frame" x="0.0" y="64" width="414" height="572"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="28g-VG-tpy">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="28g-VG-tpy">
                                     <size key="itemSize" width="182" height="182"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionReuse" id="fxV-CQ-w7V" customClass="MainCollectionViewCell" customModule="DogCare" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="CollectionReuse" id="fxV-CQ-w7V" customClass="MainCollectionViewCell" customModule="DogCare" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -71,20 +71,30 @@
                                     <action selector="playButtonHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeA-tw-cub"/>
                                 </connections>
                             </button>
+                            <slider hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dwp-rf-EZL">
+                                <rect key="frame" x="18" y="636" width="378" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.99678743696024086" green="1" blue="0.97648939996885209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="1" green="0.028078071964938167" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="JUc-AT-orK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2mA-fh-8eo"/>
+                            <constraint firstItem="JUc-AT-orK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2mA-fh-8eo"/>
+                            <constraint firstItem="dwp-rf-EZL" firstAttribute="top" secondItem="JUc-AT-orK" secondAttribute="bottom" id="3LX-aI-fvw"/>
                             <constraint firstItem="JUc-AT-orK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="66K-mU-bZJ"/>
+                            <constraint firstItem="JUc-AT-orK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-100" id="C0k-Ez-Jb8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gQp-bf-lCc" secondAttribute="bottom" id="CDD-NM-daP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JUc-AT-orK" secondAttribute="trailing" id="Gdh-Ek-DwN"/>
                             <constraint firstAttribute="trailing" secondItem="P9n-ba-tYp" secondAttribute="trailing" id="Lnr-NL-uxK"/>
                             <constraint firstItem="P9n-ba-tYp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="R6p-XZ-BU1"/>
                             <constraint firstItem="Igy-9K-hEB" firstAttribute="centerX" secondItem="P9n-ba-tYp" secondAttribute="centerX" id="SLu-Aa-fT8"/>
                             <constraint firstItem="P9n-ba-tYp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="StK-rg-Maw"/>
+                            <constraint firstItem="dwp-rf-EZL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YIL-Ds-Et6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dwp-rf-EZL" secondAttribute="trailing" constant="20" id="Z81-09-faZ"/>
                             <constraint firstItem="gQp-bf-lCc" firstAttribute="centerX" secondItem="JUc-AT-orK" secondAttribute="centerX" id="hXA-Xy-cEN"/>
-                            <constraint firstItem="JUc-AT-orK" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="qbX-on-b0W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Igy-9K-hEB" secondAttribute="bottom" constant="10" id="t5d-IL-iPH"/>
+                            <constraint firstItem="Igy-9K-hEB" firstAttribute="top" secondItem="dwp-rf-EZL" secondAttribute="bottom" constant="10" id="tvB-aD-I9P"/>
                             <constraint firstAttribute="bottom" secondItem="P9n-ba-tYp" secondAttribute="bottom" id="vx6-ZK-beh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -94,6 +104,7 @@
                         <outlet property="aboutUsButton" destination="gQp-bf-lCc" id="Rze-QE-N3c"/>
                         <outlet property="mainCollectionView" destination="JUc-AT-orK" id="e6c-Ha-Boh"/>
                         <outlet property="playButton" destination="Igy-9K-hEB" id="jMD-0s-70H"/>
+                        <outlet property="progressBarAudio" destination="dwp-rf-EZL" id="IGF-92-vje"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

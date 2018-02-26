@@ -10,6 +10,7 @@ class MainDogViewController: UIViewController, AVAudioPlayerDelegate{
     
     @IBOutlet weak var aboutUsButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var progressBarAudio: UISlider!
     //collection view that will hold the dog info
     @IBOutlet weak var mainCollectionView: UICollectionView!
     
@@ -54,10 +55,12 @@ class MainDogViewController: UIViewController, AVAudioPlayerDelegate{
                 playButton.setImage(UIImage(named: "pauseButton"), for: .normal)
                 do {
                     let audioPlayer = Bundle.main.path(forResource: selectedCareCard?.audioName, ofType: "mp3")
-                    
                     try mainAudioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPlayer!) as URL)
                     mainAudioPlayer?.delegate = self
                     mainAudioPlayer?.play()
+                    //Add selector here for progress bar to trigger each second
+                    Timer.scheduledTimer(timeInterval: 1.0, target: self, selector:  #selector(updateSlider(_:)), userInfo: nil, repeats: true)
+                    progressBarAudio.setValue(Float((mainAudioPlayer?.currentTime)!/(mainAudioPlayer?.duration)!), animated: false)
                 } catch {
                     //error catch
                 }
@@ -68,6 +71,13 @@ class MainDogViewController: UIViewController, AVAudioPlayerDelegate{
                 mainAudioPlayer?.stop()
             }
         
+    }
+    
+    @objc func updateSlider(_ sender: UITapGestureRecognizer){
+        if (mainAudioPlayer?.isPlaying)! {
+            //Update
+            progressBarAudio.setValue(Float((mainAudioPlayer?.currentTime)!/(mainAudioPlayer?.duration)!), animated: true)
+        }
     }
     
     //DESIGN//
@@ -146,6 +156,8 @@ extension MainDogViewController: UICollectionViewDataSource, UICollectionViewDel
         //set selected cell for audio playing
         selectedCareCard = dogCareCards[indexPath.row]
         playButton.isHidden = false
+        progressBarAudio.isHidden = false
+        progressBarAudio.setValue(0, animated: false)
         
         
         let cell = collectionView.cellForItem(at: indexPath) as! MainCollectionViewCell
@@ -175,6 +187,7 @@ extension MainDogViewController: UICollectionViewDataSource, UICollectionViewDel
         UIView.transition(from: viewBack, to: viewFront.contentView, duration: 0.5, options: transitionOptiones, completion: nil)
         mainCollectionView.isScrollEnabled = true
         playButton.isHidden = true
+        progressBarAudio.isHidden = true
         
         if mainAudioPlayer != nil {
             if (mainAudioPlayer?.isPlaying)! {
