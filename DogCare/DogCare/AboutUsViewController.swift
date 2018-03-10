@@ -10,23 +10,21 @@ import UIKit
 
 class AboutUsViewController: UIViewController {
 
+    //Normal IBOutlets for the website and themesong "button"
     @IBOutlet weak var websiteBox: UIView!
     @IBOutlet weak var themeSongBox: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        designSetup()
-        //Creating tap gestures for the view boxes
+        //Creating and Assigning TapGestureRecognizers to the Website and ThemeSong Button
         let websiteTap = UITapGestureRecognizer(target: self, action: #selector(websiteClicked))
         websiteBox.addGestureRecognizer(websiteTap)
         let themeSongTap = UITapGestureRecognizer(target: self, action: #selector(themeSongClicked))
         themeSongBox.addGestureRecognizer(themeSongTap)
+        designSetup()
     }
     
-    
-    
-    
-    //SELECTOR ONCLICKS FOR VIEWS//////////////////
+    //OBJC Selector Function for the TapGestureRecognizer for the Website Button
     @objc func websiteClicked(){
         //Open website in safari here
         if let url = URL(string: "http://www.happykids-happypets.com/") {
@@ -34,6 +32,8 @@ class AboutUsViewController: UIViewController {
         }
         
     }
+    
+    //OBJC Selector Function for the TapGestureRecognizer for the ThemeSong Button
     @objc func themeSongClicked(){
         //Checks whether user has the youtube app and if so opens the theme song in youtube app if not in safari
         let youtubeURL = URL(string: "youtube://watch?v=Kbn-dDCzZ3w")!
@@ -46,13 +46,13 @@ class AboutUsViewController: UIViewController {
     
     }
     
-    
-    //DESIGN////////////////
+    //StartDesign//
     func designSetup(){
         //making rounded corners on the bottom boxes
         websiteBox.layer.cornerRadius = 20
         themeSongBox.layer.cornerRadius = 20
     }
+    //EndDesign//
 
 
 }

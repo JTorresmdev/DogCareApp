@@ -71,7 +71,7 @@
                                     <action selector="playButtonHit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeA-tw-cub"/>
                                 </connections>
                             </button>
-                            <slider hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dwp-rf-EZL">
+                            <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dwp-rf-EZL">
                                 <rect key="frame" x="18" y="636" width="378" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" red="0.99678743696024086" green="1" blue="0.97648939996885209" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

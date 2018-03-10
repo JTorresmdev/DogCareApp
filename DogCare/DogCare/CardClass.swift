@@ -11,14 +11,23 @@ import UIKit
 
 class CardClass {
 
-    
+    //Each info part of the Card
     var title: String?
     var cover: String?
     var number: String?
     var body: String?
     var audioName: String?
     
+    //Initializer needed to call CardClass with all properties
+    init(title: String?, cover: String?, number: String?, body: String?, audioName: String?) {
+        self.title = title
+        self.cover = cover
+        self.number = number
+        self.body = body
+        self.audioName = audioName
+    }
     
+    //Function to provide all of the Red Card information
     static func redCards() -> [CardClass] {
         var dogCareCards = [CardClass]()
         dogCareCards.append(CardClass(title: "Knock, Knock! Who's There?", cover: "red55image", number: "55",
@@ -429,13 +438,7 @@ All you have to do is send in your own story about how you care for your dog. Yo
 //
 //    }
     
-    init(title: String?, cover: String?, number: String?, body: String?, audioName: String?) {
-        self.title = title
-        self.cover = cover
-        self.number = number
-        self.body = body
-        self.audioName = audioName
-    }
+    
     
     
     
