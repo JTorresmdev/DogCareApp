@@ -14,6 +14,7 @@ class MainDogViewController: UIViewController{
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var progressBarAudio: UISlider!
     @IBOutlet weak var mainCollectionView: UICollectionView!
+    @IBOutlet weak var cardButton: UIBarButtonItem!
     
     
 
@@ -33,10 +34,17 @@ class MainDogViewController: UIViewController{
     var dogCareCards = [CardClass]()
     //Used when card is clicked
     var selectedCareCard: CardClass?
+    //bool for cards being shown
+    var redCards = true
     
     //Populating array of Red Cards before ViewDidLoad
     override func viewWillAppear(_ animated: Bool) {
+        dogCareCards = [CardClass]()
         dogCareCards = CardClass.redCards()
+        cardButton.title = "Dog Breeds"
+        redCards = true
+        //Fixing the navigationbbarbuttonItem when the view reappaears
+        self.navigationController?.navigationBar.tintAdjustmentMode = .normal
     }
     
     override func viewDidLoad() {
@@ -49,7 +57,39 @@ class MainDogViewController: UIViewController{
         //Adjusting collectionView Style
         adjustmentsForStyle()
     }
+    
+    //Showing dog breeds
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "DogBreedSegue") {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
 
+    //IBAction to show Dog Breeds
+    @IBAction func changeCards(_ sender: Any) {
+        
+        if(redCards) {
+            dogCareCards.removeAll()
+            dogCareCards = CardClass.yellowCards()
+            mainCollectionView.reloadData()
+            cardButton.title = "Dog Care"
+            progressBarAudio.thumbTintColor = UIColor.yellow
+            redCards = false
+        } else {
+            dogCareCards = [CardClass]()
+            dogCareCards = CardClass.redCards()
+            mainCollectionView.reloadData()
+            cardButton.title = "Dog Breeds"
+            progressBarAudio.thumbTintColor = UIColor.red
+            redCards = true
+        }
+        self.mainCollectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .left, animated: false)
+        
+    }
+    
+    
+    
     //IBAction for the AudioPlayer Play Button
     @IBAction func playButtonHit(_ sender: Any) {
         
@@ -93,6 +133,9 @@ class MainDogViewController: UIViewController{
         }
     }
     
+    
+    
+    
     //Function for design changes based on UIScreenSize
     func adjustmentsForStyle(){
         //Using Cocoapods UICollectionViewGallery to customize uicollectionview design
@@ -115,6 +158,10 @@ class MainDogViewController: UIViewController{
 
 //Extension for CollectionView containing the DataSource and Delegate
 extension MainDogViewController: UICollectionViewDataSource, UICollectionViewDelegate{
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
     
     //Makes the CollectionView start at the first card and more centered
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
@@ -141,7 +188,11 @@ extension MainDogViewController: UICollectionViewDataSource, UICollectionViewDel
             
             cell.number.text = dogCareCards[indexPath.row].number
             cell.dogImage.image = UIImage(named: dogCareCards[indexPath.row].cover!)
-            
+        if(!redCards) {
+            cell.container.backgroundColor = UIColor.yellow
+        } else {
+            cell.container.backgroundColor = UIColor.red
+        }
             //DesignStuff//
             cell.container.layer.cornerRadius = 20
             cell.numberContainer.layer.cornerRadius = cell.numberContainer.frame.size.width/2
@@ -167,6 +218,7 @@ extension MainDogViewController: UICollectionViewDataSource, UICollectionViewDel
         
         //Hiding about us to make room for Audio Controls
         aboutUsButton.isHidden = true
+        cardButton.isEnabled = false
         
         //storing custom CollectionViewCell Class for the front into a Var
         viewFront = collectionView.cellForItem(at: indexPath) as! MainCollectionViewCell
@@ -190,6 +242,16 @@ extension MainDogViewController: UICollectionViewDataSource, UICollectionViewDel
         viewBack.detailContainer.isUserInteractionEnabled = true
         viewBack.addGestureRecognizer(flipToFront)
         
+        if(!redCards) {
+            viewBack.detailContainer.backgroundColor = UIColor.yellow
+            viewBack.detailTitle.textColor = UIColor.black
+            viewBack.detailNumber.textColor = UIColor.black
+        } else {
+            viewBack.detailContainer.backgroundColor = UIColor.red
+            viewBack.detailTitle.textColor = UIColor.white
+            viewBack.detailNumber.textColor = UIColor.white
+        }
+        
         //Function for populating the Back of the Card after the flip finishes
         viewBack.updateInfo(index: dogCareCards[indexPath.row])
         
@@ -212,6 +274,7 @@ extension MainDogViewController: UICollectionViewDataSource, UICollectionViewDel
         progressBarAudio.isHidden = true
         //Showing About Us Button
         aboutUsButton.isHidden = false
+        cardButton.isEnabled = true
         //Stopping AudioPlayer if not done so by user
         if mainAudioPlayer != nil {
             if (mainAudioPlayer?.isPlaying)! {

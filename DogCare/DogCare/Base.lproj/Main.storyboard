@@ -99,9 +99,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qBo-Pc-L57"/>
+                    <navigationItem key="navigationItem" id="qBo-Pc-L57">
+                        <barButtonItem key="rightBarButtonItem" title="Dog Breeds" id="EpA-ys-QkY">
+                            <connections>
+                                <action selector="changeCards:" destination="BYZ-38-t0r" id="gkJ-dh-CL5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="aboutUsButton" destination="gQp-bf-lCc" id="Rze-QE-N3c"/>
+                        <outlet property="cardButton" destination="EpA-ys-QkY" id="3M1-gq-0Or"/>
                         <outlet property="mainCollectionView" destination="JUc-AT-orK" id="e6c-Ha-Boh"/>
                         <outlet property="playButton" destination="Igy-9K-hEB" id="jMD-0s-70H"/>
                         <outlet property="progressBarAudio" destination="dwp-rf-EZL" id="IGF-92-vje"/>
@@ -109,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="36.945812807881772"/>
+            <point key="canvasLocation" x="1" y="31"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="rwI-nk-XC6">
