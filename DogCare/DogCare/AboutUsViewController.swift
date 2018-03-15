@@ -26,10 +26,16 @@ class AboutUsViewController: UIViewController {
     
     //OBJC Selector Function for the TapGestureRecognizer for the Website Button
     @objc func websiteClicked(){
-        //Open website in safari here
-        if let url = URL(string: "http://www.happykids-happypets.com/") {
-            UIApplication.shared.open(url, options: [:])
-        }
+        //Option 1////
+//        //Open website in safari here
+//        if let url = URL(string: "http://www.happykids-happypets.com/") {
+//            UIApplication.shared.open(url, options: [:])
+//        }
+        //Option 2////
+    //Animates view and shows lyrics under video
+        //Video currently isnt working because of wrong format
+        //let songLauncher = ThemeSongLauncher()
+        //songLauncher.showThemeSong()
         
     }
     
