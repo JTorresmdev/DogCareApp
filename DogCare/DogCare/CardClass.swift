@@ -146,7 +146,7 @@ Also, they need to make sure she does not hit me or throw her toys at me. I don�
 
 Do you make sure your younger brother or sister is gentle with your pets?
 """, audioName: "red14"))
-        dogCareCards.append(CardClass(title: "Spay or Neuter", cover: "red15image", number: "15", body: """
+        dogCareCards.append(CardClass(title: "Spay and Neuter", cover: "red15image", number: "15", body: """
 Spaying and neutering are operations that a vet does to stop pets from having more kittens or puppies. Girl pets are spayed. Boy pets are neutered. This is a very important operation. Why? There are way too many animals without homes.
 
 You can see them on the streets or in shelters. Many animals are put to sleep if they can’t find homes. Puppies and kittens are so cute, but they do grow up and will have more babies. So please spay and neuter your pet!
@@ -445,7 +445,6 @@ We are raising money to help animals in need. Ask your parents if they would lik
 
 Thank you again!
 """, audioName: "yellow55"))
-        
         dogBreedCards.append(CardClass(title: "Airedale Terrier", cover: "yellow1image", number: "1", body: """
 I'm almost always black and tan, with wiry hair that needs brushing every day.
 
@@ -542,7 +541,7 @@ I‛m really very lively and happy as long as you give me lots of love and atten
 If you want a super-easy pup to live with, that‛s me! I‛ll play games and snuggle with you on your lap (and on your pillow).
 
 Remember, I may look like a stuffed toy, but I‛m not, so please be gentle with me.
-""", audioName: "yello9"))
+""", audioName: "yellow9"))
         
         dogBreedCards.append(CardClass(title: "Bloodhound", cover: "yellow10image", number: "10", body: """
 My nose is so powerful that I can sniff out just about anything. Just try to hide that treat from me and you‛ll see what I mean.
@@ -1019,7 +1018,7 @@ Visit us at www.happykids-happypets.com to see if we have a contest going on. Yo
 
 All you have to do is send in your own story telling us about your dog. You can write this by yourself or with the help of a friend or family member. Hurry and ask your parents if you can go to our website!
 """, audioName: "yellow54"))
-        
+       
         
         return dogBreedCards
     }

@@ -113,8 +113,7 @@ open class HorizontalFlowLayout: UICollectionViewFlowLayout {
     }
     
     override open func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes {
-        let attributes = super.layoutAttributesForItem(at: indexPath)?.copy() as! UICollectionViewLayoutAttributes
-        return attributes
+        return super.layoutAttributesForItem(at: indexPath)!.copy() as! UICollectionViewLayoutAttributes
     }
     //
     //MARK:-Private Function

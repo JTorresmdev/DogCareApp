@@ -112,7 +112,7 @@ open class VerticalFlowLayout: UICollectionViewFlowLayout {
     
     override open func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes {
         
-        return super.layoutAttributesForItem(at: indexPath)!
+        return super.layoutAttributesForItem(at: indexPath)!.copy() as! UICollectionViewLayoutAttributes
     }
     //
     //MARK:-Private Function

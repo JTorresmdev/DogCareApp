@@ -1,12 +1,15 @@
 PODS:
   - UICollectionViewGallery (0.1.8)
+  - YouTubePlayer (0.4.0)
 
 DEPENDENCIES:
   - UICollectionViewGallery
+  - YouTubePlayer
 
 SPEC CHECKSUMS:
   UICollectionViewGallery: 08b9dc0eefd0da3a30a21b73c24e63a00d76a7bc
+  YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
 
-PODFILE CHECKSUM: b40de15277a44850f75ba0cebbe895a5c48254bf
+PODFILE CHECKSUM: 8b3c3cb6c0ca93f882ef855e2003161edc47dd5e
 
 COCOAPODS: 1.4.0

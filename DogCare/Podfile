@@ -6,6 +6,7 @@ target 'DogCare' do
   use_frameworks!
 
   # Pods for DogCare
-pod "UICollectionViewGallery"
+pod 'YouTubePlayer'
+pod 'UICollectionViewGallery'
 
 end

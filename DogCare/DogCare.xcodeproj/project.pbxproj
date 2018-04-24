@@ -28,6 +28,7 @@
 		7A2D5F14201864F90007DCDF /* MainDogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2D5F13201864F90007DCDF /* MainDogViewController.swift */; };
 		7A31BCE42032ADF600EBB144 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */; };
 		7A31BCEA2034F38A00EBB144 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A31BCE92034F38A00EBB144 /* DetailCell.xib */; };
+		7A362105208893FD0061CB95 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A362104208893FD0061CB95 /* DetailViewController.swift */; };
 		7A4C0BF62059BEB60042CA71 /* yellow13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C0BE82059BEB40042CA71 /* yellow13.mp3 */; };
 		7A4C0BF72059BEB60042CA71 /* yellow6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C0BE92059BEB40042CA71 /* yellow6.mp3 */; };
 		7A4C0BF82059BEB60042CA71 /* yellow7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C0BEA2059BEB40042CA71 /* yellow7.mp3 */; };
@@ -83,7 +84,6 @@
 		7A4C0C532059BF0E0042CA71 /* yellow49.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C0C462059BF0E0042CA71 /* yellow49.mp3 */; };
 		7A4C0C542059BF0E0042CA71 /* yellow55.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C0C472059BF0E0042CA71 /* yellow55.mp3 */; };
 		7A4C0C552059BF0E0042CA71 /* yellow50.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C0C482059BF0E0042CA71 /* yellow50.mp3 */; };
-		7A4C0C57205A5CA10042CA71 /* VideoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4C0C56205A5CA10042CA71 /* VideoLauncher.swift */; };
 		7A8CB0FD204386EB00A52099 /* red43.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A8CB0F0204386E900A52099 /* red43.mp3 */; };
 		7A8CB0FE204386EB00A52099 /* red44.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A8CB0F1204386E900A52099 /* red44.mp3 */; };
 		7A8CB0FF204386EB00A52099 /* red52.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A8CB0F2204386EA00A52099 /* red52.mp3 */; };
@@ -127,6 +127,7 @@
 		7A8CB1412043873D00A52099 /* red24.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A8CB1332043873C00A52099 /* red24.mp3 */; };
 		7AA619F820351F22009348B0 /* CardClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA619F720351F22009348B0 /* CardClass.swift */; };
 		7AA61A1720356F3A009348B0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA61A1620356F3A009348B0 /* AVFoundation.framework */; };
+		7AE1A0E4205CF674000065CD /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE1A0E3205CF674000065CD /* VideoPlayerViewController.swift */; };
 		7AF9F81A2019B5EE00C0F8CD /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF9F8192019B5EE00C0F8CD /* CustomCell.xib */; };
 		DE8D3F073D6741AC12F864C0 /* Pods_DogCare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05666E6C62F6C0D9824AE8F9 /* Pods_DogCare.framework */; };
 /* End PBXBuildFile section */
@@ -158,6 +159,7 @@
 		7A2D5F13201864F90007DCDF /* MainDogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDogViewController.swift; sourceTree = "<group>"; };
 		7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		7A31BCE92034F38A00EBB144 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		7A362104208893FD0061CB95 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7A4C0BE82059BEB40042CA71 /* yellow13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yellow13.mp3; sourceTree = "<group>"; };
 		7A4C0BE92059BEB40042CA71 /* yellow6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yellow6.mp3; sourceTree = "<group>"; };
 		7A4C0BEA2059BEB40042CA71 /* yellow7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yellow7.mp3; sourceTree = "<group>"; };
@@ -213,7 +215,6 @@
 		7A4C0C462059BF0E0042CA71 /* yellow49.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yellow49.mp3; sourceTree = "<group>"; };
 		7A4C0C472059BF0E0042CA71 /* yellow55.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yellow55.mp3; sourceTree = "<group>"; };
 		7A4C0C482059BF0E0042CA71 /* yellow50.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yellow50.mp3; sourceTree = "<group>"; };
-		7A4C0C56205A5CA10042CA71 /* VideoLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLauncher.swift; sourceTree = "<group>"; };
 		7A8CB0F0204386E900A52099 /* red43.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red43.mp3; sourceTree = "<group>"; };
 		7A8CB0F1204386E900A52099 /* red44.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red44.mp3; sourceTree = "<group>"; };
 		7A8CB0F2204386EA00A52099 /* red52.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red52.mp3; sourceTree = "<group>"; };
@@ -257,6 +258,7 @@
 		7A8CB1332043873C00A52099 /* red24.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red24.mp3; sourceTree = "<group>"; };
 		7AA619F720351F22009348B0 /* CardClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardClass.swift; sourceTree = "<group>"; };
 		7AA61A1620356F3A009348B0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7AE1A0E3205CF674000065CD /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		7AF9F8192019B5EE00C0F8CD /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -306,11 +308,12 @@
 				7A4C0BE72059BE180042CA71 /* yellowAudio */,
 				7AA61A1520356EFD009348B0 /* audio */,
 				7A2D5F08201864E20007DCDF /* Assets.xcassets */,
-				7AA619F720351F22009348B0 /* CardClass.swift */,
-				7A2D5F13201864F90007DCDF /* MainDogViewController.swift */,
-				7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */,
-				7A4C0C56205A5CA10042CA71 /* VideoLauncher.swift */,
 				7A2D5F05201864E20007DCDF /* Main.storyboard */,
+				7A2D5F13201864F90007DCDF /* MainDogViewController.swift */,
+				7A362104208893FD0061CB95 /* DetailViewController.swift */,
+				7A31BCE32032ADF600EBB144 /* AboutUsViewController.swift */,
+				7AE1A0E3205CF674000065CD /* VideoPlayerViewController.swift */,
+				7AA619F720351F22009348B0 /* CardClass.swift */,
 				7A2D5F01201864E20007DCDF /* AppDelegate.swift */,
 				7A2D5F0D201864E20007DCDF /* Info.plist */,
 				7AF9F8192019B5EE00C0F8CD /* CustomCell.xib */,
@@ -644,10 +647,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DogCare/Pods-DogCare-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/UICollectionViewGallery/UICollectionViewGallery.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICollectionViewGallery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -696,7 +701,8 @@
 			files = (
 				7A31BCE42032ADF600EBB144 /* AboutUsViewController.swift in Sources */,
 				7A2D5F14201864F90007DCDF /* MainDogViewController.swift in Sources */,
-				7A4C0C57205A5CA10042CA71 /* VideoLauncher.swift in Sources */,
+				7AE1A0E4205CF674000065CD /* VideoPlayerViewController.swift in Sources */,
+				7A362105208893FD0061CB95 /* DetailViewController.swift in Sources */,
 				7AA619F820351F22009348B0 /* CardClass.swift in Sources */,
 				7A2D5F02201864E20007DCDF /* AppDelegate.swift in Sources */,
 			);
@@ -777,6 +783,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -826,6 +833,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
