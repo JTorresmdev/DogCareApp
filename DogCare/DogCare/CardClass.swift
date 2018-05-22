@@ -30,18 +30,7 @@ class CardClass {
     //Function to provide all of the Red Card information in String Form
     static func redCards() -> [CardClass] {
         var dogCareCards = [CardClass]()
-        dogCareCards.append(CardClass(title: "Knock, Knock! Who's There?", cover: "red55image", number: "55", body: """
-Knock, knock!
-Who’s there?
-Thank.
-Thank who?
-Thank YOU for buying these cards!
-
-Did you know that we have four other boxes of cards with different messages on how to treat yourself and others? Please check them out!
-
-Would your family like to donate to the Happy Kids-Happy Pets fund so we can help even more animals?
-If so, visit our online donation page.
-""", audioName: "red55"))
+        
         dogCareCards.append(CardClass(title: "Shelter Dogs Need a Home!", cover: "red1image", number: "1", body: """
 There are many mutts and purebred dogs that need loving homes, just like yours. So when you’re ready to add a dog to your family, don’t forget to check the shelter, foster parents, or adoption events to find your very own special dog.
 
@@ -427,6 +416,18 @@ Visit us at www.happykids-happypets.com to see if we have a contest going on! Yo
 
 All you have to do is send in your own story about how you care for your dog. You can write this by yourself or with the help of a friend or family member. Hurry and ask your parents if you can go to our website!
 """, audioName: "red54"))
+        dogCareCards.append(CardClass(title: "Knock, Knock! Who's There?", cover: "red55image", number: "55", body: """
+Knock, knock!
+Who’s there?
+Thank.
+Thank who?
+Thank YOU for buying these cards!
+
+Did you know that we have four other boxes of cards with different messages on how to treat yourself and others? Please check them out!
+
+Would your family like to donate to the Happy Kids-Happy Pets fund so we can help even more animals?
+If so, visit our online donation page.
+""", audioName: "red55"))
         
         return dogCareCards
     }
@@ -438,13 +439,7 @@ All you have to do is send in your own story about how you care for your dog. Yo
     static func yellowCards() -> [CardClass] {
         var dogBreedCards = [CardClass]()
         //Temp cards to test
-        dogBreedCards.append(CardClass(title: "Thank You!", cover: "yellow55image", number: "55", body: """
-Hi! I'm a Chihuahua and my name is Betty Lou. I want to thank you for buying our cards! Did you know we have four other boxes of cards, each with different messages on how to treat ourselves and others? Please check them out. They are all great - I can't make up my mind which ones I love the best!
-
-We are raising money to help animals in need. Ask your parents if they would like to make a donation. If so, have them visit our website donation page. 50% of all profits from the cards and 100% of all donations go to animal welfare/spay/neuter.
-
-Thank you again!
-""", audioName: "yellow55"))
+        
         dogBreedCards.append(CardClass(title: "Airedale Terrier", cover: "yellow1image", number: "1", body: """
 I'm almost always black and tan, with wiry hair that needs brushing every day.
 
@@ -1018,7 +1013,13 @@ Visit us at www.happykids-happypets.com to see if we have a contest going on. Yo
 
 All you have to do is send in your own story telling us about your dog. You can write this by yourself or with the help of a friend or family member. Hurry and ask your parents if you can go to our website!
 """, audioName: "yellow54"))
-       
+        dogBreedCards.append(CardClass(title: "Thank You!", cover: "yellow55image", number: "55", body: """
+Hi! I'm a Chihuahua and my name is Betty Lou. I want to thank you for buying our cards! Did you know we have four other boxes of cards, each with different messages on how to treat ourselves and others? Please check them out. They are all great - I can't make up my mind which ones I love the best!
+
+We are raising money to help animals in need. Ask your parents if they would like to make a donation. If so, have them visit our website donation page. 50% of all profits from the cards and 100% of all donations go to animal welfare/spay/neuter.
+
+Thank you again!
+""", audioName: "yellow55"))
         
         return dogBreedCards
     }

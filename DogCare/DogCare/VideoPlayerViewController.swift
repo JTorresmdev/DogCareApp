@@ -14,10 +14,9 @@ class VideoPlayerViewController: UIViewController {
     @IBOutlet weak var mainPlayer: YouTubePlayerView!
     @IBOutlet weak var themeSongLyrics: UILabel!
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //These controls allow the video to be played not in full screen, who the fuck knows how
         let playerVars = ["controls": "1", "playsinline": "1", "autohide": "1", "showinfo": "1", "autoplay": "0", "fs": "1", "rel": "0", "loop": "0", "enablejsapi": "1", "modestbranding": "1"]
         mainPlayer.playerVars = playerVars as YouTubePlayerView.YouTubePlayerParameters
@@ -67,11 +66,6 @@ Happy Kids
 Happy Pets
 Owooooo!
 """
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

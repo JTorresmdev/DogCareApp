@@ -18,6 +18,7 @@ class DetailViewController: UIViewController{
     
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var frontImage: UIImageView!
+    @IBOutlet weak var flipImage: UIImageView!
     
     var viewFront: UIView?
     var viewBack: DetailCollectionViewCell?
@@ -51,10 +52,8 @@ class DetailViewController: UIViewController{
             if backgroundColor == "Red" {
                 containerView.backgroundColor = UIColor.red
             } else {
-                containerView.backgroundColor = UIColor.yellow
-                viewBack?.detailContainer.backgroundColor = UIColor.yellow
-                viewBack?.detailTitle.textColor = UIColor.black
-                viewBack?.detailNumber.textColor = UIColor.black
+                containerView.backgroundColor = UIColor(red:0.98, green:0.86, blue:0.28, alpha:1.0)
+                viewBack?.detailContainer.backgroundColor = UIColor(red:0.98, green:0.86, blue:0.28, alpha:1.0)
             }
             
         }
@@ -66,6 +65,25 @@ class DetailViewController: UIViewController{
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation.isLandscape {
+            
+            print("Landscape")
+            print(viewBack?.frame.size.width ?? 0)
+            print(viewBack?.frame.size.height ?? 0)
+            viewBack?.frame.size.width = UIScreen.main.bounds.width
+            viewBack?.frame.size.height = UIScreen.main.bounds.height/1.1
+            
+        } else {
+            print("Portrait")
+            print(viewBack?.frame.size.width ?? 0)
+            print(viewBack?.frame.size.height ?? 0)
+            viewBack?.frame.size.width = UIScreen.main.bounds.width
+            viewBack?.frame.size.height = UIScreen.main.bounds.height/1.1
+            
+        }
+    }
+    
     @objc func flipToBack(_ sender: UITapGestureRecognizer){
         viewBack?.frame.size.height = containerView.frame.size.height
         viewBack?.frame.size.width = containerView.frame.size.width
@@ -73,10 +91,9 @@ class DetailViewController: UIViewController{
         UIView.transition(with: containerView, duration: 0.5, options: transOpt, animations: nil, completion: nil)
         viewBack?.isHidden = false
         frontImage.isHidden = true
+        flipImage.isHidden = true
         
-        viewBack?.dogImage.layer.cornerRadius = (viewBack?.dogImage.frame.height)!/2
         viewBack?.dogImage.layer.masksToBounds = true
-//        UIView.transition(from: viewFront!, to: viewBack!, duration: 0.5, options: transOpt, completion: nil)
         let flipToFront = UITapGestureRecognizer(target: self, action: #selector(flipToFront(_:)))
         viewBack?.addGestureRecognizer(flipToFront)
     }
@@ -86,13 +103,15 @@ class DetailViewController: UIViewController{
         UIView.transition(with: containerView, duration: 0.5, options: transOpt, animations: nil, completion: nil)
         viewBack?.isHidden = true
         frontImage.isHidden = false
+        flipImage.isHidden = false
     }
     
     func populateDetailSide(card: CardClass){
         viewBack?.detailBody.text = card.body
         viewBack?.detailTitle.text = card.title
         viewBack?.detailNumber.text = card.number
-        viewBack?.dogImage.image = UIImage(named: card.cover!)
+        print("empty"+card.cover!)
+        viewBack?.dogImage.image = UIImage(named: "empty"+card.cover!)
     }
     
     
