@@ -8,5 +8,6 @@ target 'DogCare' do
   # Pods for DogCare
 pod 'YouTubePlayer'
 pod 'UICollectionViewGallery'
+pod 'Facebook-iOS-SDK' 
 
 end

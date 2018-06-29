@@ -3,126 +3,455 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21A445E140AB63DC7E5103A6E88AF6A1 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = 0BD78E55589DC87269722D6DF200B229 /* YTPlayer.html */; };
-		2A1EF5A0152BD1D8B7F3A3F930F5B17D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		2AAF5AF1BB14AF379D71708B3A378833 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		62DAC4EB7D163C497CE3B9EA4DA40A16 /* YouTubePlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D717A485DF2ABF27BDFA6E66CF3BAF7 /* YouTubePlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D65013B328E926CE81E78013852BC43 /* UICollectionViewGallery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE615C25AEDAF12B918143B9EBBCF3A9 /* UICollectionViewGallery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8949B5BE8B7F1F24B7DE1EC8C5CD3D2B /* YouTubePlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D80C2CDE906AF14BD8C1E1661D8D652F /* YouTubePlayer-dummy.m */; };
-		AE3272F5F89E1EA34942C95D4693C81B /* Pods-DogCare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F391A9D83D0B6C1268EE9CBE29740B28 /* Pods-DogCare-dummy.m */; };
-		B063F38FA62D7989BC220AC972480B4B /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F52FB07D1D45B1416EBD1BBDED2614 /* YouTubePlayer.swift */; };
-		BDD864EEDCD2BC4C8E6A61500B9C5AF4 /* UICollectionViewGallery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EF8AAA7EA6A558A1E515B8FCD047E6 /* UICollectionViewGallery-dummy.m */; };
-		E34B13E36424083ABF6B5B4A072B488C /* HorizontalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5246C0821EF4EBF0E09C90912533DC6D /* HorizontalFlowLayout.swift */; };
-		E700996638C4FEBBDE033ECAAC966B24 /* VerticalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3225AE4575BE2B3CD2DF7243134ECEB1 /* VerticalFlowLayout.swift */; };
-		EB41C23D0F39ED686AD57969D8C4B806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		EDA61AFFD55838CF722EE95CBC38528A /* Pods-DogCare-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8E98724E49A04DF771E8717997E5CB /* Pods-DogCare-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2560B410C26F678D63875C59624B103 /* GalleryCustomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCAFED645620A8969607F5EC693FD87 /* GalleryCustomClass.swift */; };
+		05E4C4328A15FF1DF3C4137922E7BD49 /* BFTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 730331276BE0409DBBD9C43588C324E4 /* BFTask.m */; };
+		06C4A0BFFAC232710C57148C9BBC6774 /* BFTaskCompletionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A64512907200D5965BFB50B43EAC90 /* BFTaskCompletionSource.m */; };
+		06F45295FB891AC9665386F5145766F5 /* BFExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4301768BD73D91BF43BCF97B130D9C4C /* BFExecutor.m */; };
+		0BCA89EE19E79DBFA97ABC5316A39754 /* BFCancellationTokenSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2C13CD08B1980B3E0F2B1AC1D55BED /* BFCancellationTokenSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F9F47F45AFFEAE2E493A66DF0E022CA /* BFCancellationToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 92172C7964830E61385BB40064A19901 /* BFCancellationToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A48B321B3114F4C5B6683582923EC15 /* YouTubePlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF09A7F316A44926E81FACBD905FFA98 /* YouTubePlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AD2A1F424C3F5E69574C297282C3CDF /* BFURL_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 092CCC95249BC6EBA2E47EA48D19716B /* BFURL_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		21FE3E686800DE7273A38C7D49441848 /* Bolts.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C0EA042D113E7CBFCF7ECB7D18B24B /* Bolts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28523FC9D0B141D4DA15E04AD71C2EB2 /* BFAppLink_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C62DE3300FBB35452CA881F5CDE6B11 /* BFAppLink_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2E1103F21698CF31473709FE9DA7D88E /* Bolts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFD0E70AAE3F3A714ED37547AFC5B2C2 /* Bolts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38C883E92F87F2FBC5368E7509832C9C /* BFAppLinkReturnToRefererController.h in Headers */ = {isa = PBXBuildFile; fileRef = 033B70DFA495D8E7B5627FF910468B28 /* BFAppLinkReturnToRefererController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F888AD30840AC0999B4E7227556FC59 /* BFCancellationTokenRegistration.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CAA70EAE349E4BD0307AD92A40ACA3F /* BFCancellationTokenRegistration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4044A2E6F601BC9EC577F3ECF616AE42 /* Bolts.m in Sources */ = {isa = PBXBuildFile; fileRef = A705D65A89ABFE3E12A5C4D1009FFD5A /* Bolts.m */; };
+		4890F5DA6CCE3D517DFCA4C365AE40E6 /* BFCancellationTokenRegistration.m in Sources */ = {isa = PBXBuildFile; fileRef = 546FBD64FEAE2BF359E1DC6729BAAF7C /* BFCancellationTokenRegistration.m */; };
+		4EC9CD25A1580E70437CB445E72F5643 /* VerticalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1A381A665F28152993246F920CECF9 /* VerticalFlowLayout.swift */; };
+		50737652A4CA63465B54DE55491323D8 /* Pods-DogCare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3D9D4E667CDDE64825C4504EF479D7E /* Pods-DogCare-dummy.m */; };
+		521E593D8C79C1C9C2059A6FE4E1743D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		56044AA6F653CE2E27FEB0B0BFE801F5 /* BFAppLinkTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 80D29ED10647D1AC74C669C37B4967E5 /* BFAppLinkTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		610CC513736B2AB3A519B0BA7072C249 /* BFMeasurementEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCF0FA36B10270D412DA7B54FE0D33E /* BFMeasurementEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61A126566067B65D52547783EBB4604E /* BFWebViewAppLinkResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1DF79C0340A42138307340B31E8596 /* BFWebViewAppLinkResolver.m */; };
+		633BF48FFC30961A50774B237DCA3F7F /* YouTubePlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D29FBBA006B7C3CC1E83E980385D8AB1 /* YouTubePlayer-dummy.m */; };
+		74DAC0F0E92AA0D2927AA542CF1D4372 /* BFCancellationToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA76BBABABA205B80C18909D811E1CC /* BFCancellationToken.m */; };
+		7811D55D97D059EE568394A2EC8058D0 /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83C6D7D386EA7C541CFB6DFC4746B25 /* YouTubePlayer.swift */; };
+		78FE166D406504AAE46FB11C14F1BF27 /* BFExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = C842A03A4D029D9DF3AA91D99102DB3E /* BFExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7960F62A44E3BABF734FB40A74D49E51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		808B1101F6639BC11502D27B637454FA /* UICollectionViewGallery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC74C87921F2D258064F0993E0BF6D9 /* UICollectionViewGallery-dummy.m */; };
+		83138049E955D6ECAD9611F4AC734407 /* BFWebViewAppLinkResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 1168E9A8AE4797AD0AFFBE010B45D513 /* BFWebViewAppLinkResolver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86FBEB3BD444B5C55B842A40F9B893EE /* BFAppLinkReturnToRefererView.h in Headers */ = {isa = PBXBuildFile; fileRef = F15DB82FD4FA114B22726721898CA608 /* BFAppLinkReturnToRefererView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		879D3BAFB02204D2E4ED929CC53CC633 /* Bolts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C466DC49AC6843736E07CD90027935D /* Bolts-dummy.m */; };
+		87ADF4E086A87E82D9AF28E4168388E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8D7AC51294909811B6E82064F66C97FE /* BFAppLinkReturnToRefererView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B5038D31C3C7A59834F31B18E96076 /* BFAppLinkReturnToRefererView.m */; };
+		908C503123B7415DB5777ECBC81B6BEC /* BFAppLinkResolving.h in Headers */ = {isa = PBXBuildFile; fileRef = 36119C05F01AC1B2E6D85399F2D894BB /* BFAppLinkResolving.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9391322062A67966035A60FC5F5AB51C /* BFTaskCompletionSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E02285FA8D72EEAA03436E84B4665A17 /* BFTaskCompletionSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C4B6D703AE5D4CDAED221D59B142781 /* BFMeasurementEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4662EC2EBACCA3ECD858582DE51E4052 /* BFMeasurementEvent.m */; };
+		A4627A0304C6FCFE8AF5A7D9C47CB6E6 /* BFMeasurementEvent_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 23AF11EE6D8FFB738427F305B4FEBA20 /* BFMeasurementEvent_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A4844515FB953F33B28FBDF62AA47717 /* BFGeneric.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F198025369189A0740C3A6B9CE64FE /* BFGeneric.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD118EC64163B5283C513FE42D4D539F /* BFAppLinkReturnToRefererController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF26DDF4417C01EDD13A50B648B5274C /* BFAppLinkReturnToRefererController.m */; };
+		AE0F82EA1B209E49571FB4D7BE87960E /* BFTask.h in Headers */ = {isa = PBXBuildFile; fileRef = D1221462216A5160BABD5D4CF0BB1F77 /* BFTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5A239E340D70F27CA47EE93F666D492 /* BFCancellationTokenSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E2658ABBD60068CFC6C1FA83C4747BDF /* BFCancellationTokenSource.m */; };
+		BB046EA973B2AA90ECA3F93929783D69 /* BFAppLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E53B3BD26AA4D19A08E0805D5E78859 /* BFAppLink.m */; };
+		BCDF640199FA64092CE4C5EA1C50FAF7 /* BFAppLinkNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 647B496DCA8E98573C2218B3CB6C07BC /* BFAppLinkNavigation.m */; };
+		C2F9D3C72766C75BFB13F591BB55EEC7 /* HorizontalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6AE9A2B3A4B014B7D57398E6212D34 /* HorizontalFlowLayout.swift */; };
+		CC762FB99CB65B71C0172135C27E1DD1 /* BFURL.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B979E74DCFBC476271EB443C126152 /* BFURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA751030861B56F2D956DE7FA13F85B /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = A3FEEA87BB43A12B6738FE9C9C801212 /* YTPlayer.html */; };
+		D947B239837C4CB2FAB1F4D1E7EF3B15 /* UICollectionViewGallery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F6FD5C0FEFF02A04FD46F1525C75AD1 /* UICollectionViewGallery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBB3C2DE85D1289FE7C2A149AD57C4E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DD5D640D983715347B7C8006800C1EDA /* BFURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A42246F4E2DAAA3CFBAD7E1016CE88E /* BFURL.m */; };
+		DD7CD635EF1503010B29B27E080203A3 /* Pods-DogCare-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39C3ED155AAD21194D7EBC252C6C98FF /* Pods-DogCare-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1679F28DB99AADF3BC7FB3FDDFD4942 /* GalleryCustomClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641DC132C4EE2888FC6DF44BD413B71 /* GalleryCustomClass.swift */; };
+		E45F601C9D7B25B3719908938B5AD46C /* BFAppLinkNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E3B26B4DAA9577F520FDC03D9FFDB3D /* BFAppLinkNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5DC7038BD95295EB8C25618C6C749A9 /* BFAppLinkReturnToRefererView_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E46E9D87119EA17F1DD04CC955E4C25 /* BFAppLinkReturnToRefererView_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB9CD84E424D94E8D6B4E30F6EB04B6C /* BFAppLink.h in Headers */ = {isa = PBXBuildFile; fileRef = BA946E015771C04F913A6E15CB20FCEF /* BFAppLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4679986CB5DF8A2CE3918A117C35701 /* BFAppLinkTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C881911DC9AF4287C3E6442898EF8C5 /* BFAppLinkTarget.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		36E37827EFA422CC633531A493E9103B /* PBXContainerItemProxy */ = {
+		3C31B7E194007D0FE971B6B2B36AD91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3E54CA22C3CCCF47C4C3ADD25CA79FE7;
+			remoteGlobalIDString = 531B78FD8AD31B542B8001A970D876EC;
+			remoteInfo = Bolts;
+		};
+		840F3B5C771B21F9AED5175D834401AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C1AEA491EB58D1C821D5D2B38551CCE;
 			remoteInfo = UICollectionViewGallery;
 		};
-		7C320718FEA9014C09D3473C72BD2E5A /* PBXContainerItemProxy */ = {
+		A63357B1DE7F2D1A0C9B5165FA8907FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6D9EFFA99DB9B67BBF03E2FFD8B46B5C;
+			remoteGlobalIDString = B06E76CCB5CFC0E8B169D8ED2B505E26;
 			remoteInfo = YouTubePlayer;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BD78E55589DC87269722D6DF200B229 /* YTPlayer.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = YTPlayer.html; path = YouTubePlayer/YouTubePlayer/YTPlayer.html; sourceTree = "<group>"; };
-		13F52FB07D1D45B1416EBD1BBDED2614 /* YouTubePlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YouTubePlayer.swift; path = YouTubePlayer/YouTubePlayer/YouTubePlayer.swift; sourceTree = "<group>"; };
-		177D9F35C6EA7668C5BBED80F080D74D /* UICollectionViewGallery-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewGallery-prefix.pch"; sourceTree = "<group>"; };
-		1C8E98724E49A04DF771E8717997E5CB /* Pods-DogCare-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DogCare-umbrella.h"; sourceTree = "<group>"; };
-		241248BF293BDDBE9417B8799785A96F /* YouTubePlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YouTubePlayer.modulemap; sourceTree = "<group>"; };
-		2C1AEE6701B0F304C54B011A31D50C4C /* Pods-DogCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DogCare.release.xcconfig"; sourceTree = "<group>"; };
-		31FD38362D3E6EB15F00FA2366B3AEA3 /* Pods-DogCare-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DogCare-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3225AE4575BE2B3CD2DF7243134ECEB1 /* VerticalFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalFlowLayout.swift; path = UICollectionViewGallery/Classes/VerticalFlowLayout.swift; sourceTree = "<group>"; };
-		32BA5C06A0F2D26D2F36A051E6AA98BB /* Pods-DogCare.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DogCare.modulemap"; sourceTree = "<group>"; };
-		36C2D7AEC12E5E78A2CD1F832AB6FEC4 /* YouTubePlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-prefix.pch"; sourceTree = "<group>"; };
-		5246C0821EF4EBF0E09C90912533DC6D /* HorizontalFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalFlowLayout.swift; path = UICollectionViewGallery/Classes/HorizontalFlowLayout.swift; sourceTree = "<group>"; };
-		608CB5AD0136EC5CE5FF6E2B61F9A773 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6277DFC9306F81DE1EADD62E4A3C2181 /* Pods-DogCare-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DogCare-frameworks.sh"; sourceTree = "<group>"; };
+		0114FB6560C4E32080A27782F117A9A1 /* FBSDKLikeButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLikeButton.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKLikeButton.h"; sourceTree = "<group>"; };
+		01216F4B3EA6E9D9082586FCFF58719D /* FBSDKShareDialogMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareDialogMode.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareDialogMode.h"; sourceTree = "<group>"; };
+		033B70DFA495D8E7B5627FF910468B28 /* BFAppLinkReturnToRefererController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkReturnToRefererController.h; path = Bolts/iOS/BFAppLinkReturnToRefererController.h; sourceTree = "<group>"; };
+		04850626C6A62A28E633871C2B00F801 /* FBSDKShareOpenGraphValueContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareOpenGraphValueContainer.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphValueContainer.h"; sourceTree = "<group>"; };
+		06F648AFD7724EAF2135421DE11065EE /* FBSDKPlacesKitConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKPlacesKitConstants.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKPlacesKit.framework/Headers/FBSDKPlacesKitConstants.h"; sourceTree = "<group>"; };
+		08BC3EFED0F72A2B28EDB25C6EAF5CF4 /* FBSDKShareDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareDialog.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareDialog.h"; sourceTree = "<group>"; };
+		092CCC95249BC6EBA2E47EA48D19716B /* BFURL_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFURL_Internal.h; path = Bolts/iOS/Internal/BFURL_Internal.h; sourceTree = "<group>"; };
+		0B4F6F88F362AA5987DC3C07C8AE51FA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		0D26E45C55F4F888EC6C3C4165AF0F89 /* FBSDKApplicationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKApplicationDelegate.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"; sourceTree = "<group>"; };
+		0E0C4555CAC10A1105BA7A65E19C10AD /* FBSDKSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSettings.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"; sourceTree = "<group>"; };
+		0E1DF79C0340A42138307340B31E8596 /* BFWebViewAppLinkResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFWebViewAppLinkResolver.m; path = Bolts/iOS/BFWebViewAppLinkResolver.m; sourceTree = "<group>"; };
+		0FA2A17300053D91B73967BEEB764BED /* FBSDKMarketingKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMarketingKit.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKMarketingKit.framework/Headers/FBSDKMarketingKit.h"; sourceTree = "<group>"; };
+		1099640EBDECA6B91E4D1820C1087BE3 /* FBSDKShareMediaContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareMediaContent.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMediaContent.h"; sourceTree = "<group>"; };
+		114A2C22337EDEDE88006F4C01908931 /* FBSDKTestUsersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKTestUsersManager.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"; sourceTree = "<group>"; };
+		1168E9A8AE4797AD0AFFBE010B45D513 /* BFWebViewAppLinkResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFWebViewAppLinkResolver.h; path = Bolts/iOS/BFWebViewAppLinkResolver.h; sourceTree = "<group>"; };
+		11C0EA042D113E7CBFCF7ECB7D18B24B /* Bolts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bolts.h; path = Bolts/Common/Bolts.h; sourceTree = "<group>"; };
+		1A339D2E9C642BFF5751CA2183A4F143 /* FBSDKShareLinkContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareLinkContent.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareLinkContent.h"; sourceTree = "<group>"; };
+		1BB2544E8C963478E18001D82236CA00 /* Pods-DogCare.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DogCare.modulemap"; sourceTree = "<group>"; };
+		1C466DC49AC6843736E07CD90027935D /* Bolts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bolts-dummy.m"; sourceTree = "<group>"; };
+		1C62DE3300FBB35452CA881F5CDE6B11 /* BFAppLink_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLink_Internal.h; path = Bolts/iOS/Internal/BFAppLink_Internal.h; sourceTree = "<group>"; };
+		1CE481E38B618EB65A865D2DB56506CF /* FBSDKShareAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareAPI.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareAPI.h"; sourceTree = "<group>"; };
+		1D38B25BDB3EED269F165552503575A7 /* FBSDKMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMacros.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"; sourceTree = "<group>"; };
+		1EA8A133BBC654CABB4CA4D39A3C2822 /* FBSDKShareOpenGraphAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareOpenGraphAction.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphAction.h"; sourceTree = "<group>"; };
+		1FCF0FA36B10270D412DA7B54FE0D33E /* BFMeasurementEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFMeasurementEvent.h; path = Bolts/iOS/BFMeasurementEvent.h; sourceTree = "<group>"; };
+		2019208CA7EB6A03932A3984B46F0717 /* FBSDKAutoLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAutoLog.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKMarketingKit.framework/Headers/FBSDKAutoLog.h"; sourceTree = "<group>"; };
+		21C5D92197A9511A8F08E2EA9CFC925F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		23AF11EE6D8FFB738427F305B4FEBA20 /* BFMeasurementEvent_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFMeasurementEvent_Internal.h; path = Bolts/iOS/Internal/BFMeasurementEvent_Internal.h; sourceTree = "<group>"; };
+		2548A9C854EC19ED78EF735CBCA0CFAD /* FBSDKSharing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSharing.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKSharing.h"; sourceTree = "<group>"; };
+		260174DB27E13B216334F4B25D3D1D77 /* FBSDKLoginTooltipView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginTooltipView.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"; sourceTree = "<group>"; };
+		270152CAB8BB4E28B4B4E99514B5991B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27D90D58F321EFC1EABF7CEF557DBD59 /* Bolts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Bolts.modulemap; sourceTree = "<group>"; };
+		28213767C5AE2F68D2C988C8BBF210A4 /* FBSDKDeviceLoginManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDeviceLoginManager.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"; sourceTree = "<group>"; };
+		2A42246F4E2DAAA3CFBAD7E1016CE88E /* BFURL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFURL.m; path = Bolts/iOS/BFURL.m; sourceTree = "<group>"; };
+		2AEB88D21BF00B6CC6589A47090445D9 /* FBSDKSharePhotoContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSharePhotoContent.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKSharePhotoContent.h"; sourceTree = "<group>"; };
+		2B781650F6096A0DE930E973E9B9EB83 /* FBSDKShareMessengerMediaTemplateContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareMessengerMediaTemplateContent.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerMediaTemplateContent.h"; sourceTree = "<group>"; };
+		2CAA70EAE349E4BD0307AD92A40ACA3F /* BFCancellationTokenRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFCancellationTokenRegistration.h; path = Bolts/Common/BFCancellationTokenRegistration.h; sourceTree = "<group>"; };
+		2D8AA1E9B7DEFDF28D5446E3DA3655B6 /* FBSDKAppEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppEvents.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"; sourceTree = "<group>"; };
+		2F6FD5C0FEFF02A04FD46F1525C75AD1 /* UICollectionViewGallery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewGallery-umbrella.h"; sourceTree = "<group>"; };
+		3063711A56725CB048D3F14FAE7960BD /* FBSDKDeviceLoginCodeInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDeviceLoginCodeInfo.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"; sourceTree = "<group>"; };
+		337D3D9E22F6D6C83615A5AA327F5328 /* FBSDKCoreKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKCoreKit.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"; sourceTree = "<group>"; };
+		36119C05F01AC1B2E6D85399F2D894BB /* BFAppLinkResolving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkResolving.h; path = Bolts/iOS/BFAppLinkResolving.h; sourceTree = "<group>"; };
+		3881D8B63A393BD70DAC5D8CAA6E2862 /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKStrings.bundle; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FacebookSDKStrings.bundle"; sourceTree = "<group>"; };
+		39C3ED155AAD21194D7EBC252C6C98FF /* Pods-DogCare-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DogCare-umbrella.h"; sourceTree = "<group>"; };
+		3AFB76125BC05C78E6385AD7E654EC80 /* FBSDKShareMessengerURLActionButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareMessengerURLActionButton.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerURLActionButton.h"; sourceTree = "<group>"; };
+		3E3B26B4DAA9577F520FDC03D9FFDB3D /* BFAppLinkNavigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkNavigation.h; path = Bolts/iOS/BFAppLinkNavigation.h; sourceTree = "<group>"; };
+		3F3D727C47E7600C3F496B3992A13973 /* FBSDKMessageDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMessageDialog.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKMessageDialog.h"; sourceTree = "<group>"; };
+		414A59CA928860C3217BAA0F70FC5D04 /* FBSDKShareButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareButton.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareButton.h"; sourceTree = "<group>"; };
+		4301768BD73D91BF43BCF97B130D9C4C /* BFExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFExecutor.m; path = Bolts/Common/BFExecutor.m; sourceTree = "<group>"; };
+		44669103E20C1C25081C400A1865AE21 /* FBSDKShareMessengerOpenGraphMusicTemplateContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareMessengerOpenGraphMusicTemplateContent.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerOpenGraphMusicTemplateContent.h"; sourceTree = "<group>"; };
+		4662EC2EBACCA3ECD858582DE51E4052 /* BFMeasurementEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFMeasurementEvent.m; path = Bolts/iOS/BFMeasurementEvent.m; sourceTree = "<group>"; };
+		478820FB581472ECA115A5CB796D7E16 /* FBSDKUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKUtility.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"; sourceTree = "<group>"; };
+		47CA6B5B695CBC41E612AD28146976E7 /* Pods-DogCare-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DogCare-acknowledgements.markdown"; sourceTree = "<group>"; };
+		49D33E9FE0AB59B32D7F76A6DB2147D9 /* FBSDKLikeObjectType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLikeObjectType.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKLikeObjectType.h"; sourceTree = "<group>"; };
+		4B2C13CD08B1980B3E0F2B1AC1D55BED /* BFCancellationTokenSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFCancellationTokenSource.h; path = Bolts/Common/BFCancellationTokenSource.h; sourceTree = "<group>"; };
+		4B2CAB6E27CF46642DC1E2F62A535D55 /* Pods-DogCare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DogCare.release.xcconfig"; sourceTree = "<group>"; };
+		4E1F2BE8692E800E708F9D3C45657A06 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Bolts.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EA76BBABABA205B80C18909D811E1CC /* BFCancellationToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFCancellationToken.m; path = Bolts/Common/BFCancellationToken.m; sourceTree = "<group>"; };
+		527DFBB9094707DA198BA3FF0E0BAF82 /* FBSDKMarketingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMarketingKit.framework; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKMarketingKit.framework"; sourceTree = "<group>"; };
+		52EBC6BA4E96F638E6504B6427EA5EAF /* FBSDKAccessToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAccessToken.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"; sourceTree = "<group>"; };
+		546FBD64FEAE2BF359E1DC6729BAAF7C /* BFCancellationTokenRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFCancellationTokenRegistration.m; path = Bolts/Common/BFCancellationTokenRegistration.m; sourceTree = "<group>"; };
+		550FBEE824A348791D94C8081467EBFC /* FBSDKConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKConstants.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"; sourceTree = "<group>"; };
+		5641DC132C4EE2888FC6DF44BD413B71 /* GalleryCustomClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GalleryCustomClass.swift; path = UICollectionViewGallery/Classes/GalleryCustomClass.swift; sourceTree = "<group>"; };
+		58580954B1EC8E1495E35FEC2083F378 /* Bolts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bolts.xcconfig; sourceTree = "<group>"; };
+		58CEE66AFF238D8FD5DADE928AEA0B6B /* FBSDKGameRequestContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGameRequestContent.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKGameRequestContent.h"; sourceTree = "<group>"; };
+		606F3197CCBC39E834CAD59D0717DFE0 /* FBSDKGameRequestDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGameRequestDialog.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKGameRequestDialog.h"; sourceTree = "<group>"; };
+		6139E2548916C018EDEFC2B05463F18C /* UICollectionViewGallery.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICollectionViewGallery.xcconfig; sourceTree = "<group>"; };
+		632ADA256EB9E8A61B60874DD8D07A5E /* YouTubePlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YouTubePlayer.modulemap; sourceTree = "<group>"; };
+		641C21E163FDAA9CDB4E67E767D0D123 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		647B496DCA8E98573C2218B3CB6C07BC /* BFAppLinkNavigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkNavigation.m; path = Bolts/iOS/BFAppLinkNavigation.m; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6E4448BDAED0C8ED5D0F38B3CD8503A0 /* UICollectionViewGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICollectionViewGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EFE99E78DCF0B117E16F534BCFFF82B /* Pods-DogCare-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DogCare-resources.sh"; sourceTree = "<group>"; };
-		87EF8AAA7EA6A558A1E515B8FCD047E6 /* UICollectionViewGallery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewGallery-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9432CDC9BB3D42B2F8ABCD67DC7E7BD8 /* YouTubePlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YouTubePlayer.xcconfig; sourceTree = "<group>"; };
-		95F5C9BC8672D68425946548752CA540 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D717A485DF2ABF27BDFA6E66CF3BAF7 /* YouTubePlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-umbrella.h"; sourceTree = "<group>"; };
-		A955DDD9EBE35CEC362C38CCBFE1227F /* Pods_DogCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogCare.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA16EFD9FD58A1D93DD661AC4C114C3F /* Pods-DogCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DogCare.debug.xcconfig"; sourceTree = "<group>"; };
-		B113BF69DB8A32CDA86F0125540BC2A9 /* UICollectionViewGallery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UICollectionViewGallery.modulemap; sourceTree = "<group>"; };
-		B3477F20F485B2C43CAA431D8D44108D /* UICollectionViewGallery.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICollectionViewGallery.xcconfig; sourceTree = "<group>"; };
-		C44BEB2B901ACC790A0FF11D0F0B7FA8 /* YouTubePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YouTubePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE615C25AEDAF12B918143B9EBBCF3A9 /* UICollectionViewGallery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewGallery-umbrella.h"; sourceTree = "<group>"; };
-		D0D1710E8B08D9675C7807A20809C43C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D80C2CDE906AF14BD8C1E1661D8D652F /* YouTubePlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YouTubePlayer-dummy.m"; sourceTree = "<group>"; };
-		DCCAFED645620A8969607F5EC693FD87 /* GalleryCustomClass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GalleryCustomClass.swift; path = UICollectionViewGallery/Classes/GalleryCustomClass.swift; sourceTree = "<group>"; };
-		E3CA795358B7D583AEDC8C8BF3E63953 /* Pods-DogCare-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DogCare-acknowledgements.plist"; sourceTree = "<group>"; };
-		F391A9D83D0B6C1268EE9CBE29740B28 /* Pods-DogCare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DogCare-dummy.m"; sourceTree = "<group>"; };
+		676AEE2EE6FBC18A06F47BC859BA4C59 /* FBSDKShareVideoContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareVideoContent.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareVideoContent.h"; sourceTree = "<group>"; };
+		68F64C5A4A5F6E54B495E846954C9490 /* UICollectionViewGallery-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewGallery-prefix.pch"; sourceTree = "<group>"; };
+		6A0B58D6CF01727403B6D0AA3A1A357A /* FBSDKGraphRequestConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequestConnection.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"; sourceTree = "<group>"; };
+		6CC74C87921F2D258064F0993E0BF6D9 /* UICollectionViewGallery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewGallery-dummy.m"; sourceTree = "<group>"; };
+		6E46E9D87119EA17F1DD04CC955E4C25 /* BFAppLinkReturnToRefererView_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkReturnToRefererView_Internal.h; path = Bolts/iOS/Internal/BFAppLinkReturnToRefererView_Internal.h; sourceTree = "<group>"; };
+		6E53B3BD26AA4D19A08E0805D5E78859 /* BFAppLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLink.m; path = Bolts/iOS/BFAppLink.m; sourceTree = "<group>"; };
+		6E655EE6AA60F9CB2D75C2C27BB1068C /* FBSDKLoginKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginKit.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"; sourceTree = "<group>"; };
+		722D5E6560B91A77A1BB86813EB06092 /* Pods_DogCare.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DogCare.framework; path = "Pods-DogCare.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		730331276BE0409DBBD9C43588C324E4 /* BFTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTask.m; path = Bolts/Common/BFTask.m; sourceTree = "<group>"; };
+		77EDD10B8311E15822C00B5A3212C85F /* FBSDKShareOpenGraphContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareOpenGraphContent.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphContent.h"; sourceTree = "<group>"; };
+		77FCB78122C2EE458F8051A40742C2E4 /* UICollectionViewGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UICollectionViewGallery.framework; path = UICollectionViewGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A69E97F3FD2D8DD5C55275250B2035B /* YouTubePlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-prefix.pch"; sourceTree = "<group>"; };
+		7C881911DC9AF4287C3E6442898EF8C5 /* BFAppLinkTarget.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkTarget.m; path = Bolts/iOS/BFAppLinkTarget.m; sourceTree = "<group>"; };
+		7E4BDC52C3B849C0C7008F0BEA7A75EA /* FBSDKAppGroupAddDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppGroupAddDialog.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKAppGroupAddDialog.h"; sourceTree = "<group>"; };
+		7FAE6B5E0C44426AA87D21E6DFE6B66F /* FBSDKShareConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareConstants.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareConstants.h"; sourceTree = "<group>"; };
+		7FB7CDBA30DA5FC1A4EBB566EA48B349 /* FBSDKDeviceLoginManagerResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDeviceLoginManagerResult.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"; sourceTree = "<group>"; };
+		80D29ED10647D1AC74C669C37B4967E5 /* BFAppLinkTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkTarget.h; path = Bolts/iOS/BFAppLinkTarget.h; sourceTree = "<group>"; };
+		81C82D03552E62C7BE1EB2DCC0A7363F /* Pods-DogCare-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DogCare-resources.sh"; sourceTree = "<group>"; };
+		82D673FB9AED421089427543354A0D45 /* UICollectionViewGallery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UICollectionViewGallery.modulemap; sourceTree = "<group>"; };
+		869E08F4B2B57D5E15DC23230A4740FE /* FBSDKGraphErrorRecoveryProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphErrorRecoveryProcessor.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"; sourceTree = "<group>"; };
+		882CF38212493BFA692B3E97FC3B118E /* FBSDKAppLinkUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLinkUtility.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"; sourceTree = "<group>"; };
+		8894B1203E70C2AEFA033D2BD23C2768 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		89468165FDECFE4E336DFAEE9CED7553 /* FBSDKAppGroupContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppGroupContent.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKAppGroupContent.h"; sourceTree = "<group>"; };
+		8B28846D2AAAA1A483ACC548DF79A7A5 /* FBSDKShareVideo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareVideo.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareVideo.h"; sourceTree = "<group>"; };
+		8C5ACC4209005FFA7953B8CF5B373B54 /* FBSDKGraphRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequest.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"; sourceTree = "<group>"; };
+		8E31C155CFBE6EE1D0057E09C8C992B7 /* FBSDKMutableCopying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMutableCopying.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"; sourceTree = "<group>"; };
+		903B78C558C09431FD8C8E4A1F6588EF /* FBSDKHashtag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKHashtag.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKHashtag.h"; sourceTree = "<group>"; };
+		90870594B5B10DB4C6C6F3C0817B4EC3 /* FBSDKLoginConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginConstants.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"; sourceTree = "<group>"; };
+		90F198025369189A0740C3A6B9CE64FE /* BFGeneric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFGeneric.h; path = Bolts/Common/BFGeneric.h; sourceTree = "<group>"; };
+		92172C7964830E61385BB40064A19901 /* BFCancellationToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFCancellationToken.h; path = Bolts/Common/BFCancellationToken.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93DCF1DFCB3966E0AD0D24CEC74BE0A3 /* FBSDKSharePhoto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSharePhoto.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKSharePhoto.h"; sourceTree = "<group>"; };
+		A0CBB1B5C15B390D3AD986A394BC26BE /* FBSDKLoginButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginButton.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"; sourceTree = "<group>"; };
+		A3D9D4E667CDDE64825C4504EF479D7E /* Pods-DogCare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DogCare-dummy.m"; sourceTree = "<group>"; };
+		A3FEEA87BB43A12B6738FE9C9C801212 /* YTPlayer.html */ = {isa = PBXFileReference; includeInIndex = 1; name = YTPlayer.html; path = YouTubePlayer/YouTubePlayer/YTPlayer.html; sourceTree = "<group>"; };
+		A705D65A89ABFE3E12A5C4D1009FFD5A /* Bolts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Bolts.m; path = Bolts/Common/Bolts.m; sourceTree = "<group>"; };
+		A8ACE536296AD54646DCFC47C075E557 /* FBSDKProfilePictureView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKProfilePictureView.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"; sourceTree = "<group>"; };
+		ABEE3DAC4293E48E1EE2B3BA49613476 /* FBSDKPlacesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKPlacesManager.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKPlacesKit.framework/Headers/FBSDKPlacesManager.h"; sourceTree = "<group>"; };
+		AD1F50ACF1F86A73E38D388DFAFA6E69 /* FBSDKPlacesKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKPlacesKit.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKPlacesKit.framework/Headers/FBSDKPlacesKit.h"; sourceTree = "<group>"; };
+		ADECB473D8DE12AF026E96DC3335B255 /* FBSDKProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKProfile.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"; sourceTree = "<group>"; };
+		AE5B23F959D2CA94403A3C42F305342C /* Pods-DogCare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DogCare.debug.xcconfig"; sourceTree = "<group>"; };
+		B46AB994C82B8AFBFE1A974FDB9DB391 /* YouTubePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YouTubePlayer.framework; path = YouTubePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B83C6D7D386EA7C541CFB6DFC4746B25 /* YouTubePlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YouTubePlayer.swift; path = YouTubePlayer/YouTubePlayer/YouTubePlayer.swift; sourceTree = "<group>"; };
+		BA946E015771C04F913A6E15CB20FCEF /* BFAppLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLink.h; path = Bolts/iOS/BFAppLink.h; sourceTree = "<group>"; };
+		BC4E4EEAE1941A16603B96CFB2DB93BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD3AD99A9E7571BFB98C8277834C1F0C /* Pods-DogCare-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DogCare-frameworks.sh"; sourceTree = "<group>"; };
+		C25FCE2A4A66D2427398073D8AD1D8FB /* FBSDKLiking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLiking.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKLiking.h"; sourceTree = "<group>"; };
+		C2C55572BC891DD182FD68620E78C7C9 /* FBSDKAppLinkResolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppLinkResolver.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"; sourceTree = "<group>"; };
+		C4BE40B336AC6B7B61ADFEA4598AAE15 /* FBSDKShareOpenGraphObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareOpenGraphObject.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareOpenGraphObject.h"; sourceTree = "<group>"; };
+		C842A03A4D029D9DF3AA91D99102DB3E /* BFExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFExecutor.h; path = Bolts/Common/BFExecutor.h; sourceTree = "<group>"; };
+		CAABBD15B19ABC18658DBA6A2DF4BDA5 /* FBSDKLikeControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLikeControl.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKLikeControl.h"; sourceTree = "<group>"; };
+		CAB406E23F1CCCD68BBB902D5329C490 /* FBSDKPlacesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKPlacesKit.framework; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKPlacesKit.framework"; sourceTree = "<group>"; };
+		CB1A381A665F28152993246F920CECF9 /* VerticalFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalFlowLayout.swift; path = UICollectionViewGallery/Classes/VerticalFlowLayout.swift; sourceTree = "<group>"; };
+		CCAA2AAC337C74AD9D70886DC69F0F92 /* FBSDKSharingContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSharingContent.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKSharingContent.h"; sourceTree = "<group>"; };
+		CD81ECF968E24149F266EDB7FF33E302 /* Pods-DogCare-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DogCare-acknowledgements.plist"; sourceTree = "<group>"; };
+		CE73DE65AA02101584BC50F8DC047F1D /* FBSDKAppInviteDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppInviteDialog.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKAppInviteDialog.h"; sourceTree = "<group>"; };
+		CF26DDF4417C01EDD13A50B648B5274C /* BFAppLinkReturnToRefererController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkReturnToRefererController.m; path = Bolts/iOS/BFAppLinkReturnToRefererController.m; sourceTree = "<group>"; };
+		CFD0E70AAE3F3A714ED37547AFC5B2C2 /* Bolts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bolts-umbrella.h"; sourceTree = "<group>"; };
+		D1221462216A5160BABD5D4CF0BB1F77 /* BFTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTask.h; path = Bolts/Common/BFTask.h; sourceTree = "<group>"; };
+		D1A788F1C42D1328D14C97D876CF45A9 /* FBSDKGraphRequestDataAttachment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequestDataAttachment.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"; sourceTree = "<group>"; };
+		D24EAC4F32765C94A7836498BE3F5B53 /* FBSDKShareMessengerGenericTemplateContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareMessengerGenericTemplateContent.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerGenericTemplateContent.h"; sourceTree = "<group>"; };
+		D29FBBA006B7C3CC1E83E980385D8AB1 /* YouTubePlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YouTubePlayer-dummy.m"; sourceTree = "<group>"; };
+		D63084AE7C302ABFF01C2D8C1F45A36B /* FBSDKLoginManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginManager.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"; sourceTree = "<group>"; };
+		D78573D94CCB12AE3340899F012EF03B /* FBSDKLoginManagerLoginResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginManagerLoginResult.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"; sourceTree = "<group>"; };
+		D973D768CEF3AE779DF8B216157BF2B5 /* FBSDKSharingButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSharingButton.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKSharingButton.h"; sourceTree = "<group>"; };
+		DC5367CB91742E2B8A21C70AAC81F036 /* YouTubePlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YouTubePlayer.xcconfig; sourceTree = "<group>"; };
+		DC6AE9A2B3A4B014B7D57398E6212D34 /* HorizontalFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalFlowLayout.swift; path = UICollectionViewGallery/Classes/HorizontalFlowLayout.swift; sourceTree = "<group>"; };
+		DC730E393A6BB27CD1BFB5AB4802BFED /* FBSDKAppGroupJoinDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppGroupJoinDialog.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKAppGroupJoinDialog.h"; sourceTree = "<group>"; };
+		E02285FA8D72EEAA03436E84B4665A17 /* BFTaskCompletionSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTaskCompletionSource.h; path = Bolts/Common/BFTaskCompletionSource.h; sourceTree = "<group>"; };
+		E2658ABBD60068CFC6C1FA83C4747BDF /* BFCancellationTokenSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFCancellationTokenSource.m; path = Bolts/Common/BFCancellationTokenSource.m; sourceTree = "<group>"; };
+		E2B979E74DCFBC476271EB443C126152 /* BFURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFURL.h; path = Bolts/iOS/BFURL.h; sourceTree = "<group>"; };
+		EF8BCD835E4CDB0D8BA901E611C4365F /* FBSDKShareKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareKit.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareKit.h"; sourceTree = "<group>"; };
+		F15DB82FD4FA114B22726721898CA608 /* BFAppLinkReturnToRefererView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkReturnToRefererView.h; path = Bolts/iOS/BFAppLinkReturnToRefererView.h; sourceTree = "<group>"; };
+		F2E653E85904F02E11CDBE43A2717859 /* FBSDKCopying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKCopying.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"; sourceTree = "<group>"; };
+		F3A2F9466080B169ED31A051E8A28D93 /* FBSDKCameraEffectTextures.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKCameraEffectTextures.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKCameraEffectTextures.h"; sourceTree = "<group>"; };
+		F4B5038D31C3C7A59834F31B18E96076 /* BFAppLinkReturnToRefererView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkReturnToRefererView.m; path = Bolts/iOS/BFAppLinkReturnToRefererView.m; sourceTree = "<group>"; };
+		F4D4C07C126DDE2B98D7808F6933F241 /* Bolts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bolts-prefix.pch"; sourceTree = "<group>"; };
+		F56251C430F665D308D331FBD6AE9E52 /* FBSDKButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKButton.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKCoreKit.framework/Headers/FBSDKButton.h"; sourceTree = "<group>"; };
+		F6A64512907200D5965BFB50B43EAC90 /* BFTaskCompletionSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTaskCompletionSource.m; path = Bolts/Common/BFTaskCompletionSource.m; sourceTree = "<group>"; };
+		F75E12D723E280472491ABB308007FD2 /* FBSDKShareMessengerActionButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareMessengerActionButton.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerActionButton.h"; sourceTree = "<group>"; };
+		F9AC438FCF7DA94C1793C640135ED3CC /* FBSDKSendButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSendButton.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKSendButton.h"; sourceTree = "<group>"; };
+		F9FFABA881B6F9D4320C07DD966A71C4 /* FBSDKCameraEffectArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKCameraEffectArguments.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKCameraEffectArguments.h"; sourceTree = "<group>"; };
+		FB82F06FF008FE8B54CB835E75B93044 /* FBSDKTooltipView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKTooltipView.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"; sourceTree = "<group>"; };
+		FC622DA18CB01A07EF4A69E10C83C53A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD58EBDFFBE91C549294A16B0081FE21 /* FBSDKShareCameraEffectContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareCameraEffectContent.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareCameraEffectContent.h"; sourceTree = "<group>"; };
+		FE96791234BCDF0EBFD1FF42D6EB09B8 /* FBSDKShareMessengerGenericTemplateElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareMessengerGenericTemplateElement.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKShareMessengerGenericTemplateElement.h"; sourceTree = "<group>"; };
+		FF09A7F316A44926E81FACBD905FFA98 /* YouTubePlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-umbrella.h"; sourceTree = "<group>"; };
+		FF60F691B63B1666587C47B4458527E7 /* FBSDKAppInviteContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppInviteContent.h; path = "FacebookSDKs-iOS-universal-4.34.0/iOS/FBSDKShareKit.framework/Headers/FBSDKAppInviteContent.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3781908BA9B4EEEAF5A2626D66360C01 /* Frameworks */ = {
+		10DD267FE6907056200F33AD4A808ED2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AAF5AF1BB14AF379D71708B3A378833 /* Foundation.framework in Frameworks */,
+				87ADF4E086A87E82D9AF28E4168388E1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A271638AFB35E9F505272A232F82C1AF /* Frameworks */ = {
+		89CCF7347C2944F7856881FE3BB5F4E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A1EF5A0152BD1D8B7F3A3F930F5B17D /* Foundation.framework in Frameworks */,
+				DBB3C2DE85D1289FE7C2A149AD57C4E1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5150F2FD757191AB12BA5844233922D /* Frameworks */ = {
+		AC2F622ECE8471477ACB613503CF47C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB41C23D0F39ED686AD57969D8C4B806 /* Foundation.framework in Frameworks */,
+				521E593D8C79C1C9C2059A6FE4E1743D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD5B2666168A3064570156A5D6BA1FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7960F62A44E3BABF734FB40A74D49E51 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044B1A9928AE1057C54C9792F6DB940B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3881D8B63A393BD70DAC5D8CAA6E2862 /* FacebookSDKStrings.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1E990482C5B0CD74887057B70B952750 /* Bolts */ = {
+			isa = PBXGroup;
+			children = (
+				3E02E3952334444DFF54A030B63EEA2A /* AppLinks */,
+				AB544A96D0995FF78671278FD9EB03F8 /* Support Files */,
+				ADAEE85270983F394D248FB4AEDC460E /* Tasks */,
+			);
+			name = Bolts;
+			path = Bolts;
+			sourceTree = "<group>";
+		};
 		2A23A626EB5B512B168668515CF2CE7B /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EC941903659932A4BD58C5D8D109E482 /* Pods-DogCare */,
+				DA52A74A2465F6A57A16C8DD7CA4289D /* Pods-DogCare */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		78FDC14F8FE967E0640036537223D85D /* Support Files */ = {
+		2FC98BE638D06B26C871904F12E583DE /* ShareKit */ = {
 			isa = PBXGroup;
 			children = (
-				D0D1710E8B08D9675C7807A20809C43C /* Info.plist */,
-				241248BF293BDDBE9417B8799785A96F /* YouTubePlayer.modulemap */,
-				9432CDC9BB3D42B2F8ABCD67DC7E7BD8 /* YouTubePlayer.xcconfig */,
-				D80C2CDE906AF14BD8C1E1661D8D652F /* YouTubePlayer-dummy.m */,
-				36C2D7AEC12E5E78A2CD1F832AB6FEC4 /* YouTubePlayer-prefix.pch */,
-				9D717A485DF2ABF27BDFA6E66CF3BAF7 /* YouTubePlayer-umbrella.h */,
+				7E4BDC52C3B849C0C7008F0BEA7A75EA /* FBSDKAppGroupAddDialog.h */,
+				89468165FDECFE4E336DFAEE9CED7553 /* FBSDKAppGroupContent.h */,
+				DC730E393A6BB27CD1BFB5AB4802BFED /* FBSDKAppGroupJoinDialog.h */,
+				FF60F691B63B1666587C47B4458527E7 /* FBSDKAppInviteContent.h */,
+				CE73DE65AA02101584BC50F8DC047F1D /* FBSDKAppInviteDialog.h */,
+				F9FFABA881B6F9D4320C07DD966A71C4 /* FBSDKCameraEffectArguments.h */,
+				F3A2F9466080B169ED31A051E8A28D93 /* FBSDKCameraEffectTextures.h */,
+				58CEE66AFF238D8FD5DADE928AEA0B6B /* FBSDKGameRequestContent.h */,
+				606F3197CCBC39E834CAD59D0717DFE0 /* FBSDKGameRequestDialog.h */,
+				903B78C558C09431FD8C8E4A1F6588EF /* FBSDKHashtag.h */,
+				0114FB6560C4E32080A27782F117A9A1 /* FBSDKLikeButton.h */,
+				CAABBD15B19ABC18658DBA6A2DF4BDA5 /* FBSDKLikeControl.h */,
+				49D33E9FE0AB59B32D7F76A6DB2147D9 /* FBSDKLikeObjectType.h */,
+				C25FCE2A4A66D2427398073D8AD1D8FB /* FBSDKLiking.h */,
+				3F3D727C47E7600C3F496B3992A13973 /* FBSDKMessageDialog.h */,
+				F9AC438FCF7DA94C1793C640135ED3CC /* FBSDKSendButton.h */,
+				1CE481E38B618EB65A865D2DB56506CF /* FBSDKShareAPI.h */,
+				414A59CA928860C3217BAA0F70FC5D04 /* FBSDKShareButton.h */,
+				FD58EBDFFBE91C549294A16B0081FE21 /* FBSDKShareCameraEffectContent.h */,
+				7FAE6B5E0C44426AA87D21E6DFE6B66F /* FBSDKShareConstants.h */,
+				08BC3EFED0F72A2B28EDB25C6EAF5CF4 /* FBSDKShareDialog.h */,
+				01216F4B3EA6E9D9082586FCFF58719D /* FBSDKShareDialogMode.h */,
+				EF8BCD835E4CDB0D8BA901E611C4365F /* FBSDKShareKit.h */,
+				1A339D2E9C642BFF5751CA2183A4F143 /* FBSDKShareLinkContent.h */,
+				1099640EBDECA6B91E4D1820C1087BE3 /* FBSDKShareMediaContent.h */,
+				F75E12D723E280472491ABB308007FD2 /* FBSDKShareMessengerActionButton.h */,
+				D24EAC4F32765C94A7836498BE3F5B53 /* FBSDKShareMessengerGenericTemplateContent.h */,
+				FE96791234BCDF0EBFD1FF42D6EB09B8 /* FBSDKShareMessengerGenericTemplateElement.h */,
+				2B781650F6096A0DE930E973E9B9EB83 /* FBSDKShareMessengerMediaTemplateContent.h */,
+				44669103E20C1C25081C400A1865AE21 /* FBSDKShareMessengerOpenGraphMusicTemplateContent.h */,
+				3AFB76125BC05C78E6385AD7E654EC80 /* FBSDKShareMessengerURLActionButton.h */,
+				1EA8A133BBC654CABB4CA4D39A3C2822 /* FBSDKShareOpenGraphAction.h */,
+				77EDD10B8311E15822C00B5A3212C85F /* FBSDKShareOpenGraphContent.h */,
+				C4BE40B336AC6B7B61ADFEA4598AAE15 /* FBSDKShareOpenGraphObject.h */,
+				04850626C6A62A28E633871C2B00F801 /* FBSDKShareOpenGraphValueContainer.h */,
+				93DCF1DFCB3966E0AD0D24CEC74BE0A3 /* FBSDKSharePhoto.h */,
+				2AEB88D21BF00B6CC6589A47090445D9 /* FBSDKSharePhotoContent.h */,
+				8B28846D2AAAA1A483ACC548DF79A7A5 /* FBSDKShareVideo.h */,
+				676AEE2EE6FBC18A06F47BC859BA4C59 /* FBSDKShareVideoContent.h */,
+				2548A9C854EC19ED78EF735CBCA0CFAD /* FBSDKSharing.h */,
+				D973D768CEF3AE779DF8B216157BF2B5 /* FBSDKSharingButton.h */,
+				CCAA2AAC337C74AD9D70886DC69F0F92 /* FBSDKSharingContent.h */,
+				CCF4E9664BF5F2AE124BF4EB7D5B6E37 /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/YouTubePlayer";
+			name = ShareKit;
+			sourceTree = "<group>";
+		};
+		3D60E948D36A0EDA1D47DAA9C4AB12A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				527DFBB9094707DA198BA3FF0E0BAF82 /* FBSDKMarketingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E02E3952334444DFF54A030B63EEA2A /* AppLinks */ = {
+			isa = PBXGroup;
+			children = (
+				BA946E015771C04F913A6E15CB20FCEF /* BFAppLink.h */,
+				6E53B3BD26AA4D19A08E0805D5E78859 /* BFAppLink.m */,
+				1C62DE3300FBB35452CA881F5CDE6B11 /* BFAppLink_Internal.h */,
+				3E3B26B4DAA9577F520FDC03D9FFDB3D /* BFAppLinkNavigation.h */,
+				647B496DCA8E98573C2218B3CB6C07BC /* BFAppLinkNavigation.m */,
+				36119C05F01AC1B2E6D85399F2D894BB /* BFAppLinkResolving.h */,
+				033B70DFA495D8E7B5627FF910468B28 /* BFAppLinkReturnToRefererController.h */,
+				CF26DDF4417C01EDD13A50B648B5274C /* BFAppLinkReturnToRefererController.m */,
+				F15DB82FD4FA114B22726721898CA608 /* BFAppLinkReturnToRefererView.h */,
+				F4B5038D31C3C7A59834F31B18E96076 /* BFAppLinkReturnToRefererView.m */,
+				6E46E9D87119EA17F1DD04CC955E4C25 /* BFAppLinkReturnToRefererView_Internal.h */,
+				80D29ED10647D1AC74C669C37B4967E5 /* BFAppLinkTarget.h */,
+				7C881911DC9AF4287C3E6442898EF8C5 /* BFAppLinkTarget.m */,
+				1FCF0FA36B10270D412DA7B54FE0D33E /* BFMeasurementEvent.h */,
+				4662EC2EBACCA3ECD858582DE51E4052 /* BFMeasurementEvent.m */,
+				23AF11EE6D8FFB738427F305B4FEBA20 /* BFMeasurementEvent_Internal.h */,
+				E2B979E74DCFBC476271EB443C126152 /* BFURL.h */,
+				2A42246F4E2DAAA3CFBAD7E1016CE88E /* BFURL.m */,
+				092CCC95249BC6EBA2E47EA48D19716B /* BFURL_Internal.h */,
+				1168E9A8AE4797AD0AFFBE010B45D513 /* BFWebViewAppLinkResolver.h */,
+				0E1DF79C0340A42138307340B31E8596 /* BFWebViewAppLinkResolver.m */,
+			);
+			name = AppLinks;
+			sourceTree = "<group>";
+		};
+		46A39D755F074196071033127DCFF5A3 /* LoginKit */ = {
+			isa = PBXGroup;
+			children = (
+				3063711A56725CB048D3F14FAE7960BD /* FBSDKDeviceLoginCodeInfo.h */,
+				28213767C5AE2F68D2C988C8BBF210A4 /* FBSDKDeviceLoginManager.h */,
+				7FB7CDBA30DA5FC1A4EBB566EA48B349 /* FBSDKDeviceLoginManagerResult.h */,
+				A0CBB1B5C15B390D3AD986A394BC26BE /* FBSDKLoginButton.h */,
+				90870594B5B10DB4C6C6F3C0817B4EC3 /* FBSDKLoginConstants.h */,
+				6E655EE6AA60F9CB2D75C2C27BB1068C /* FBSDKLoginKit.h */,
+				D63084AE7C302ABFF01C2D8C1F45A36B /* FBSDKLoginManager.h */,
+				D78573D94CCB12AE3340899F012EF03B /* FBSDKLoginManagerLoginResult.h */,
+				260174DB27E13B216334F4B25D3D1D77 /* FBSDKLoginTooltipView.h */,
+				FB82F06FF008FE8B54CB835E75B93044 /* FBSDKTooltipView.h */,
+				8768E6F5A8ED0EC7ACE49E12AA64F219 /* Frameworks */,
+			);
+			name = LoginKit;
+			sourceTree = "<group>";
+		};
+		517931369E2EE73697F86615256CA938 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E990482C5B0CD74887057B70B952750 /* Bolts */,
+				DF94D1A102F3D408B3DBD2AC85AE4826 /* Facebook-iOS-SDK */,
+				8E9DA04C8414D3760F95F8C9CED0E239 /* UICollectionViewGallery */,
+				C177DEB647AFAC65317FEB706450312C /* YouTubePlayer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		523B27458E5682B8D2ABAAB81590C1C2 /* CoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				52EBC6BA4E96F638E6504B6427EA5EAF /* FBSDKAccessToken.h */,
+				2D8AA1E9B7DEFDF28D5446E3DA3655B6 /* FBSDKAppEvents.h */,
+				0D26E45C55F4F888EC6C3C4165AF0F89 /* FBSDKApplicationDelegate.h */,
+				C2C55572BC891DD182FD68620E78C7C9 /* FBSDKAppLinkResolver.h */,
+				882CF38212493BFA692B3E97FC3B118E /* FBSDKAppLinkUtility.h */,
+				F56251C430F665D308D331FBD6AE9E52 /* FBSDKButton.h */,
+				550FBEE824A348791D94C8081467EBFC /* FBSDKConstants.h */,
+				F2E653E85904F02E11CDBE43A2717859 /* FBSDKCopying.h */,
+				337D3D9E22F6D6C83615A5AA327F5328 /* FBSDKCoreKit.h */,
+				869E08F4B2B57D5E15DC23230A4740FE /* FBSDKGraphErrorRecoveryProcessor.h */,
+				8C5ACC4209005FFA7953B8CF5B373B54 /* FBSDKGraphRequest.h */,
+				6A0B58D6CF01727403B6D0AA3A1A357A /* FBSDKGraphRequestConnection.h */,
+				D1A788F1C42D1328D14C97D876CF45A9 /* FBSDKGraphRequestDataAttachment.h */,
+				1D38B25BDB3EED269F165552503575A7 /* FBSDKMacros.h */,
+				8E31C155CFBE6EE1D0057E09C8C992B7 /* FBSDKMutableCopying.h */,
+				ADECB473D8DE12AF026E96DC3335B255 /* FBSDKProfile.h */,
+				A8ACE536296AD54646DCFC47C075E557 /* FBSDKProfilePictureView.h */,
+				0E0C4555CAC10A1105BA7A65E19C10AD /* FBSDKSettings.h */,
+				114A2C22337EDEDE88006F4C01908931 /* FBSDKTestUsersManager.h */,
+				478820FB581472ECA115A5CB796D7E16 /* FBSDKUtility.h */,
+				E027137C74C200D1C684D200B7FF60D2 /* Frameworks */,
+				044B1A9928AE1057C54C9792F6DB940B /* Resources */,
+			);
+			name = CoreKit;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -130,37 +459,99 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				8197D40F1FFA2400F206885912959A9A /* Pods */,
-				F10C5BE072A58101292B869B13A4A37A /* Products */,
+				517931369E2EE73697F86615256CA938 /* Pods */,
+				F4057A953083EE655E5F553DEAE572D0 /* Products */,
 				2A23A626EB5B512B168668515CF2CE7B /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8197D40F1FFA2400F206885912959A9A /* Pods */ = {
+		7F15600BFF612EF8985C2272A0D36393 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F80A17782F66D615BC36A84F3E82399B /* UICollectionViewGallery */,
-				86F79ABE812B2D32AE6911F37F6010AD /* YouTubePlayer */,
+				BC4E4EEAE1941A16603B96CFB2DB93BE /* Info.plist */,
+				82D673FB9AED421089427543354A0D45 /* UICollectionViewGallery.modulemap */,
+				6139E2548916C018EDEFC2B05463F18C /* UICollectionViewGallery.xcconfig */,
+				6CC74C87921F2D258064F0993E0BF6D9 /* UICollectionViewGallery-dummy.m */,
+				68F64C5A4A5F6E54B495E846954C9490 /* UICollectionViewGallery-prefix.pch */,
+				2F6FD5C0FEFF02A04FD46F1525C75AD1 /* UICollectionViewGallery-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/UICollectionViewGallery";
 			sourceTree = "<group>";
 		};
-		86F79ABE812B2D32AE6911F37F6010AD /* YouTubePlayer */ = {
+		862C15B97FB0F3A4A6982FFC3DA490CF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				13F52FB07D1D45B1416EBD1BBDED2614 /* YouTubePlayer.swift */,
-				9C46712318EE7AC5FD9943A1D672639C /* Resources */,
-				78FDC14F8FE967E0640036537223D85D /* Support Files */,
-			);
-			path = YouTubePlayer;
-			sourceTree = "<group>";
-		};
-		9C46712318EE7AC5FD9943A1D672639C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				0BD78E55589DC87269722D6DF200B229 /* YTPlayer.html */,
+				A3FEEA87BB43A12B6738FE9C9C801212 /* YTPlayer.html */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		8768E6F5A8ED0EC7ACE49E12AA64F219 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21C5D92197A9511A8F08E2EA9CFC925F /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C615906CFD886C2572CC977BB81234D /* PlacesKit */ = {
+			isa = PBXGroup;
+			children = (
+				AD1F50ACF1F86A73E38D388DFAFA6E69 /* FBSDKPlacesKit.h */,
+				06F648AFD7724EAF2135421DE11065EE /* FBSDKPlacesKitConstants.h */,
+				ABEE3DAC4293E48E1EE2B3BA49613476 /* FBSDKPlacesManager.h */,
+				CC8484327A6BCF08F27DB75C67A8E9B8 /* Frameworks */,
+			);
+			name = PlacesKit;
+			sourceTree = "<group>";
+		};
+		8E9DA04C8414D3760F95F8C9CED0E239 /* UICollectionViewGallery */ = {
+			isa = PBXGroup;
+			children = (
+				5641DC132C4EE2888FC6DF44BD413B71 /* GalleryCustomClass.swift */,
+				DC6AE9A2B3A4B014B7D57398E6212D34 /* HorizontalFlowLayout.swift */,
+				CB1A381A665F28152993246F920CECF9 /* VerticalFlowLayout.swift */,
+				7F15600BFF612EF8985C2272A0D36393 /* Support Files */,
+			);
+			name = UICollectionViewGallery;
+			path = UICollectionViewGallery;
+			sourceTree = "<group>";
+		};
+		AB544A96D0995FF78671278FD9EB03F8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27D90D58F321EFC1EABF7CEF557DBD59 /* Bolts.modulemap */,
+				58580954B1EC8E1495E35FEC2083F378 /* Bolts.xcconfig */,
+				1C466DC49AC6843736E07CD90027935D /* Bolts-dummy.m */,
+				F4D4C07C126DDE2B98D7808F6933F241 /* Bolts-prefix.pch */,
+				CFD0E70AAE3F3A714ED37547AFC5B2C2 /* Bolts-umbrella.h */,
+				FC622DA18CB01A07EF4A69E10C83C53A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Bolts";
+			sourceTree = "<group>";
+		};
+		ADAEE85270983F394D248FB4AEDC460E /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				92172C7964830E61385BB40064A19901 /* BFCancellationToken.h */,
+				4EA76BBABABA205B80C18909D811E1CC /* BFCancellationToken.m */,
+				2CAA70EAE349E4BD0307AD92A40ACA3F /* BFCancellationTokenRegistration.h */,
+				546FBD64FEAE2BF359E1DC6729BAAF7C /* BFCancellationTokenRegistration.m */,
+				4B2C13CD08B1980B3E0F2B1AC1D55BED /* BFCancellationTokenSource.h */,
+				E2658ABBD60068CFC6C1FA83C4747BDF /* BFCancellationTokenSource.m */,
+				C842A03A4D029D9DF3AA91D99102DB3E /* BFExecutor.h */,
+				4301768BD73D91BF43BCF97B130D9C4C /* BFExecutor.m */,
+				90F198025369189A0740C3A6B9CE64FE /* BFGeneric.h */,
+				D1221462216A5160BABD5D4CF0BB1F77 /* BFTask.h */,
+				730331276BE0409DBBD9C43588C324E4 /* BFTask.m */,
+				E02285FA8D72EEAA03436E84B4665A17 /* BFTaskCompletionSource.h */,
+				F6A64512907200D5965BFB50B43EAC90 /* BFTaskCompletionSource.m */,
+				11C0EA042D113E7CBFCF7ECB7D18B24B /* Bolts.h */,
+				A705D65A89ABFE3E12A5C4D1009FFD5A /* Bolts.m */,
+			);
+			name = Tasks;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -171,18 +562,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB55B86DF71181ECE2C54E2BE7D4D04D /* Support Files */ = {
+		C177DEB647AFAC65317FEB706450312C /* YouTubePlayer */ = {
 			isa = PBXGroup;
 			children = (
-				95F5C9BC8672D68425946548752CA540 /* Info.plist */,
-				B113BF69DB8A32CDA86F0125540BC2A9 /* UICollectionViewGallery.modulemap */,
-				B3477F20F485B2C43CAA431D8D44108D /* UICollectionViewGallery.xcconfig */,
-				87EF8AAA7EA6A558A1E515B8FCD047E6 /* UICollectionViewGallery-dummy.m */,
-				177D9F35C6EA7668C5BBED80F080D74D /* UICollectionViewGallery-prefix.pch */,
-				CE615C25AEDAF12B918143B9EBBCF3A9 /* UICollectionViewGallery-umbrella.h */,
+				B83C6D7D386EA7C541CFB6DFC4746B25 /* YouTubePlayer.swift */,
+				862C15B97FB0F3A4A6982FFC3DA490CF /* Resources */,
+				D0D364766401FE04B5CDEA3892A27E4D /* Support Files */,
+			);
+			name = YouTubePlayer;
+			path = YouTubePlayer;
+			sourceTree = "<group>";
+		};
+		CC8484327A6BCF08F27DB75C67A8E9B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAB406E23F1CCCD68BBB902D5329C490 /* FBSDKPlacesKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCF4E9664BF5F2AE124BF4EB7D5B6E37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B4F6F88F362AA5987DC3C07C8AE51FA /* FBSDKShareKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0D364766401FE04B5CDEA3892A27E4D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				270152CAB8BB4E28B4B4E99514B5991B /* Info.plist */,
+				632ADA256EB9E8A61B60874DD8D07A5E /* YouTubePlayer.modulemap */,
+				DC5367CB91742E2B8A21C70AAC81F036 /* YouTubePlayer.xcconfig */,
+				D29FBBA006B7C3CC1E83E980385D8AB1 /* YouTubePlayer-dummy.m */,
+				7A69E97F3FD2D8DD5C55275250B2035B /* YouTubePlayer-prefix.pch */,
+				FF09A7F316A44926E81FACBD905FFA98 /* YouTubePlayer-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/UICollectionViewGallery";
+			path = "../Target Support Files/YouTubePlayer";
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -193,82 +611,132 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		EC941903659932A4BD58C5D8D109E482 /* Pods-DogCare */ = {
+		DA52A74A2465F6A57A16C8DD7CA4289D /* Pods-DogCare */ = {
 			isa = PBXGroup;
 			children = (
-				608CB5AD0136EC5CE5FF6E2B61F9A773 /* Info.plist */,
-				32BA5C06A0F2D26D2F36A051E6AA98BB /* Pods-DogCare.modulemap */,
-				31FD38362D3E6EB15F00FA2366B3AEA3 /* Pods-DogCare-acknowledgements.markdown */,
-				E3CA795358B7D583AEDC8C8BF3E63953 /* Pods-DogCare-acknowledgements.plist */,
-				F391A9D83D0B6C1268EE9CBE29740B28 /* Pods-DogCare-dummy.m */,
-				6277DFC9306F81DE1EADD62E4A3C2181 /* Pods-DogCare-frameworks.sh */,
-				7EFE99E78DCF0B117E16F534BCFFF82B /* Pods-DogCare-resources.sh */,
-				1C8E98724E49A04DF771E8717997E5CB /* Pods-DogCare-umbrella.h */,
-				AA16EFD9FD58A1D93DD661AC4C114C3F /* Pods-DogCare.debug.xcconfig */,
-				2C1AEE6701B0F304C54B011A31D50C4C /* Pods-DogCare.release.xcconfig */,
+				641C21E163FDAA9CDB4E67E767D0D123 /* Info.plist */,
+				1BB2544E8C963478E18001D82236CA00 /* Pods-DogCare.modulemap */,
+				47CA6B5B695CBC41E612AD28146976E7 /* Pods-DogCare-acknowledgements.markdown */,
+				CD81ECF968E24149F266EDB7FF33E302 /* Pods-DogCare-acknowledgements.plist */,
+				A3D9D4E667CDDE64825C4504EF479D7E /* Pods-DogCare-dummy.m */,
+				BD3AD99A9E7571BFB98C8277834C1F0C /* Pods-DogCare-frameworks.sh */,
+				81C82D03552E62C7BE1EB2DCC0A7363F /* Pods-DogCare-resources.sh */,
+				39C3ED155AAD21194D7EBC252C6C98FF /* Pods-DogCare-umbrella.h */,
+				AE5B23F959D2CA94403A3C42F305342C /* Pods-DogCare.debug.xcconfig */,
+				4B2CAB6E27CF46642DC1E2F62A535D55 /* Pods-DogCare.release.xcconfig */,
 			);
 			name = "Pods-DogCare";
 			path = "Target Support Files/Pods-DogCare";
 			sourceTree = "<group>";
 		};
-		F10C5BE072A58101292B869B13A4A37A /* Products */ = {
+		DF94D1A102F3D408B3DBD2AC85AE4826 /* Facebook-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				A955DDD9EBE35CEC362C38CCBFE1227F /* Pods_DogCare.framework */,
-				6E4448BDAED0C8ED5D0F38B3CD8503A0 /* UICollectionViewGallery.framework */,
-				C44BEB2B901ACC790A0FF11D0F0B7FA8 /* YouTubePlayer.framework */,
+				523B27458E5682B8D2ABAAB81590C1C2 /* CoreKit */,
+				46A39D755F074196071033127DCFF5A3 /* LoginKit */,
+				EB5998F63EB36F77151CE072F0EC3891 /* MarketingKit */,
+				8C615906CFD886C2572CC977BB81234D /* PlacesKit */,
+				2FC98BE638D06B26C871904F12E583DE /* ShareKit */,
 			);
-			name = Products;
+			name = "Facebook-iOS-SDK";
+			path = "Facebook-iOS-SDK";
 			sourceTree = "<group>";
 		};
-		F80A17782F66D615BC36A84F3E82399B /* UICollectionViewGallery */ = {
+		E027137C74C200D1C684D200B7FF60D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DCCAFED645620A8969607F5EC693FD87 /* GalleryCustomClass.swift */,
-				5246C0821EF4EBF0E09C90912533DC6D /* HorizontalFlowLayout.swift */,
-				3225AE4575BE2B3CD2DF7243134ECEB1 /* VerticalFlowLayout.swift */,
-				CB55B86DF71181ECE2C54E2BE7D4D04D /* Support Files */,
+				8894B1203E70C2AEFA033D2BD23C2768 /* FBSDKCoreKit.framework */,
 			);
-			path = UICollectionViewGallery;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB5998F63EB36F77151CE072F0EC3891 /* MarketingKit */ = {
+			isa = PBXGroup;
+			children = (
+				2019208CA7EB6A03932A3984B46F0717 /* FBSDKAutoLog.h */,
+				0FA2A17300053D91B73967BEEB764BED /* FBSDKMarketingKit.h */,
+				3D60E948D36A0EDA1D47DAA9C4AB12A2 /* Frameworks */,
+			);
+			name = MarketingKit;
+			sourceTree = "<group>";
+		};
+		F4057A953083EE655E5F553DEAE572D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E1F2BE8692E800E708F9D3C45657A06 /* Bolts.framework */,
+				722D5E6560B91A77A1BB86813EB06092 /* Pods_DogCare.framework */,
+				77FCB78122C2EE458F8051A40742C2E4 /* UICollectionViewGallery.framework */,
+				B46AB994C82B8AFBFE1A974FDB9DB391 /* YouTubePlayer.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		10A833E36A9D6122C5BD07BEAFC2221C /* Headers */ = {
+		08601EF6291D4568694D6AF52F646512 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA61AFFD55838CF722EE95CBC38528A /* Pods-DogCare-umbrella.h in Headers */,
+				EB9CD84E424D94E8D6B4E30F6EB04B6C /* BFAppLink.h in Headers */,
+				28523FC9D0B141D4DA15E04AD71C2EB2 /* BFAppLink_Internal.h in Headers */,
+				E45F601C9D7B25B3719908938B5AD46C /* BFAppLinkNavigation.h in Headers */,
+				908C503123B7415DB5777ECBC81B6BEC /* BFAppLinkResolving.h in Headers */,
+				38C883E92F87F2FBC5368E7509832C9C /* BFAppLinkReturnToRefererController.h in Headers */,
+				86FBEB3BD444B5C55B842A40F9B893EE /* BFAppLinkReturnToRefererView.h in Headers */,
+				E5DC7038BD95295EB8C25618C6C749A9 /* BFAppLinkReturnToRefererView_Internal.h in Headers */,
+				56044AA6F653CE2E27FEB0B0BFE801F5 /* BFAppLinkTarget.h in Headers */,
+				0F9F47F45AFFEAE2E493A66DF0E022CA /* BFCancellationToken.h in Headers */,
+				3F888AD30840AC0999B4E7227556FC59 /* BFCancellationTokenRegistration.h in Headers */,
+				0BCA89EE19E79DBFA97ABC5316A39754 /* BFCancellationTokenSource.h in Headers */,
+				78FE166D406504AAE46FB11C14F1BF27 /* BFExecutor.h in Headers */,
+				A4844515FB953F33B28FBDF62AA47717 /* BFGeneric.h in Headers */,
+				610CC513736B2AB3A519B0BA7072C249 /* BFMeasurementEvent.h in Headers */,
+				A4627A0304C6FCFE8AF5A7D9C47CB6E6 /* BFMeasurementEvent_Internal.h in Headers */,
+				AE0F82EA1B209E49571FB4D7BE87960E /* BFTask.h in Headers */,
+				9391322062A67966035A60FC5F5AB51C /* BFTaskCompletionSource.h in Headers */,
+				CC762FB99CB65B71C0172135C27E1DD1 /* BFURL.h in Headers */,
+				1AD2A1F424C3F5E69574C297282C3CDF /* BFURL_Internal.h in Headers */,
+				83138049E955D6ECAD9611F4AC734407 /* BFWebViewAppLinkResolver.h in Headers */,
+				2E1103F21698CF31473709FE9DA7D88E /* Bolts-umbrella.h in Headers */,
+				21FE3E686800DE7273A38C7D49441848 /* Bolts.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1892F2E4B52FF0E92BDCD9F81CFAB18C /* Headers */ = {
+		27BD5DFC405CBC426F4CFF77DB634523 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62DAC4EB7D163C497CE3B9EA4DA40A16 /* YouTubePlayer-umbrella.h in Headers */,
+				1A48B321B3114F4C5B6683582923EC15 /* YouTubePlayer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FEAD9B5C1C109C9F60557652D758A9B1 /* Headers */ = {
+		4AA01009D012E9BE6094F61D36C36A9E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D65013B328E926CE81E78013852BC43 /* UICollectionViewGallery-umbrella.h in Headers */,
+				DD7CD635EF1503010B29B27E080203A3 /* Pods-DogCare-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6840F2BE73FA60093D60200660B26364 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D947B239837C4CB2FAB1F4D1E7EF3B15 /* UICollectionViewGallery-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3E54CA22C3CCCF47C4C3ADD25CA79FE7 /* UICollectionViewGallery */ = {
+		1C1AEA491EB58D1C821D5D2B38551CCE /* UICollectionViewGallery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E61F143C16D93DCADFD5E3BC00D2740 /* Build configuration list for PBXNativeTarget "UICollectionViewGallery" */;
+			buildConfigurationList = 0F9C519AF075DE883E4B5491AF96A2BD /* Build configuration list for PBXNativeTarget "UICollectionViewGallery" */;
 			buildPhases = (
-				9BDA96F0EE1B075F28B50DF535B10F35 /* Sources */,
-				B5150F2FD757191AB12BA5844233922D /* Frameworks */,
-				FEAD9B5C1C109C9F60557652D758A9B1 /* Headers */,
+				DDA13AA2745C69635C4B7961C1F2A490 /* Sources */,
+				10DD267FE6907056200F33AD4A808ED2 /* Frameworks */,
+				6840F2BE73FA60093D60200660B26364 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -276,36 +744,34 @@
 			);
 			name = UICollectionViewGallery;
 			productName = UICollectionViewGallery;
-			productReference = 6E4448BDAED0C8ED5D0F38B3CD8503A0 /* UICollectionViewGallery.framework */;
+			productReference = 77FCB78122C2EE458F8051A40742C2E4 /* UICollectionViewGallery.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4EA6395FEEE022AB262A2A62625697D1 /* Pods-DogCare */ = {
+		531B78FD8AD31B542B8001A970D876EC /* Bolts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0234DA95A4A81D764C578C5C05BD206 /* Build configuration list for PBXNativeTarget "Pods-DogCare" */;
+			buildConfigurationList = 17EBC9F5759EB02EC962F3FAC032F916 /* Build configuration list for PBXNativeTarget "Bolts" */;
 			buildPhases = (
-				54AA897058ABD6B944499ECB7F99AD5D /* Sources */,
-				3781908BA9B4EEEAF5A2626D66360C01 /* Frameworks */,
-				10A833E36A9D6122C5BD07BEAFC2221C /* Headers */,
+				4776F4183558413B957794C57F48EA44 /* Sources */,
+				AC2F622ECE8471477ACB613503CF47C2 /* Frameworks */,
+				08601EF6291D4568694D6AF52F646512 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6A5D43E9F9156A0650E516618EC325B6 /* PBXTargetDependency */,
-				8DF5D1134214A79917B19B2FA7D721D7 /* PBXTargetDependency */,
 			);
-			name = "Pods-DogCare";
-			productName = "Pods-DogCare";
-			productReference = A955DDD9EBE35CEC362C38CCBFE1227F /* Pods_DogCare.framework */;
+			name = Bolts;
+			productName = Bolts;
+			productReference = 4E1F2BE8692E800E708F9D3C45657A06 /* Bolts.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6D9EFFA99DB9B67BBF03E2FFD8B46B5C /* YouTubePlayer */ = {
+		B06E76CCB5CFC0E8B169D8ED2B505E26 /* YouTubePlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B71A67C06A4F894BB93F5C8406F3C51A /* Build configuration list for PBXNativeTarget "YouTubePlayer" */;
+			buildConfigurationList = ADB18BC0C10D10F3FDF39EF1F81DF8B6 /* Build configuration list for PBXNativeTarget "YouTubePlayer" */;
 			buildPhases = (
-				46D0DC9F26B9595E4931E9050B77D4B2 /* Sources */,
-				A271638AFB35E9F505272A232F82C1AF /* Frameworks */,
-				FD585B839E67F312F228F3F8DB2B115C /* Resources */,
-				1892F2E4B52FF0E92BDCD9F81CFAB18C /* Headers */,
+				B2EF206A6595237AA331FEFFB3645734 /* Sources */,
+				89CCF7347C2944F7856881FE3BB5F4E4 /* Frameworks */,
+				D39251EB090C0D54025AC86D68051E99 /* Resources */,
+				27BD5DFC405CBC426F4CFF77DB634523 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -313,7 +779,27 @@
 			);
 			name = YouTubePlayer;
 			productName = YouTubePlayer;
-			productReference = C44BEB2B901ACC790A0FF11D0F0B7FA8 /* YouTubePlayer.framework */;
+			productReference = B46AB994C82B8AFBFE1A974FDB9DB391 /* YouTubePlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4301857BF694D088035155645871B25 /* Pods-DogCare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8739708344A273FE3094FBAEF4A340E2 /* Build configuration list for PBXNativeTarget "Pods-DogCare" */;
+			buildPhases = (
+				3C1C0680554A4F1D8AD138CCDF142933 /* Sources */,
+				FAD5B2666168A3064570156A5D6BA1FC /* Frameworks */,
+				4AA01009D012E9BE6094F61D36C36A9E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39322700EDBBDDE06FCA194C65D0F8FB /* PBXTargetDependency */,
+				A5D5F4982FC564AE162709B0A70B9BB0 /* PBXTargetDependency */,
+				A6B35CA53FF58840CDC0DDE75C87DDFE /* PBXTargetDependency */,
+			);
+			name = "Pods-DogCare";
+			productName = "Pods-DogCare";
+			productReference = 722D5E6560B91A77A1BB86813EB06092 /* Pods_DogCare.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -322,7 +808,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -333,78 +819,108 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F10C5BE072A58101292B869B13A4A37A /* Products */;
+			productRefGroup = F4057A953083EE655E5F553DEAE572D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4EA6395FEEE022AB262A2A62625697D1 /* Pods-DogCare */,
-				3E54CA22C3CCCF47C4C3ADD25CA79FE7 /* UICollectionViewGallery */,
-				6D9EFFA99DB9B67BBF03E2FFD8B46B5C /* YouTubePlayer */,
+				531B78FD8AD31B542B8001A970D876EC /* Bolts */,
+				D4301857BF694D088035155645871B25 /* Pods-DogCare */,
+				1C1AEA491EB58D1C821D5D2B38551CCE /* UICollectionViewGallery */,
+				B06E76CCB5CFC0E8B169D8ED2B505E26 /* YouTubePlayer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FD585B839E67F312F228F3F8DB2B115C /* Resources */ = {
+		D39251EB090C0D54025AC86D68051E99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21A445E140AB63DC7E5103A6E88AF6A1 /* YTPlayer.html in Resources */,
+				CEA751030861B56F2D956DE7FA13F85B /* YTPlayer.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		46D0DC9F26B9595E4931E9050B77D4B2 /* Sources */ = {
+		3C1C0680554A4F1D8AD138CCDF142933 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8949B5BE8B7F1F24B7DE1EC8C5CD3D2B /* YouTubePlayer-dummy.m in Sources */,
-				B063F38FA62D7989BC220AC972480B4B /* YouTubePlayer.swift in Sources */,
+				50737652A4CA63465B54DE55491323D8 /* Pods-DogCare-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54AA897058ABD6B944499ECB7F99AD5D /* Sources */ = {
+		4776F4183558413B957794C57F48EA44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE3272F5F89E1EA34942C95D4693C81B /* Pods-DogCare-dummy.m in Sources */,
+				BB046EA973B2AA90ECA3F93929783D69 /* BFAppLink.m in Sources */,
+				BCDF640199FA64092CE4C5EA1C50FAF7 /* BFAppLinkNavigation.m in Sources */,
+				AD118EC64163B5283C513FE42D4D539F /* BFAppLinkReturnToRefererController.m in Sources */,
+				8D7AC51294909811B6E82064F66C97FE /* BFAppLinkReturnToRefererView.m in Sources */,
+				F4679986CB5DF8A2CE3918A117C35701 /* BFAppLinkTarget.m in Sources */,
+				74DAC0F0E92AA0D2927AA542CF1D4372 /* BFCancellationToken.m in Sources */,
+				4890F5DA6CCE3D517DFCA4C365AE40E6 /* BFCancellationTokenRegistration.m in Sources */,
+				B5A239E340D70F27CA47EE93F666D492 /* BFCancellationTokenSource.m in Sources */,
+				06F45295FB891AC9665386F5145766F5 /* BFExecutor.m in Sources */,
+				9C4B6D703AE5D4CDAED221D59B142781 /* BFMeasurementEvent.m in Sources */,
+				05E4C4328A15FF1DF3C4137922E7BD49 /* BFTask.m in Sources */,
+				06C4A0BFFAC232710C57148C9BBC6774 /* BFTaskCompletionSource.m in Sources */,
+				DD5D640D983715347B7C8006800C1EDA /* BFURL.m in Sources */,
+				61A126566067B65D52547783EBB4604E /* BFWebViewAppLinkResolver.m in Sources */,
+				879D3BAFB02204D2E4ED929CC53CC633 /* Bolts-dummy.m in Sources */,
+				4044A2E6F601BC9EC577F3ECF616AE42 /* Bolts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BDA96F0EE1B075F28B50DF535B10F35 /* Sources */ = {
+		B2EF206A6595237AA331FEFFB3645734 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2560B410C26F678D63875C59624B103 /* GalleryCustomClass.swift in Sources */,
-				E34B13E36424083ABF6B5B4A072B488C /* HorizontalFlowLayout.swift in Sources */,
-				BDD864EEDCD2BC4C8E6A61500B9C5AF4 /* UICollectionViewGallery-dummy.m in Sources */,
-				E700996638C4FEBBDE033ECAAC966B24 /* VerticalFlowLayout.swift in Sources */,
+				633BF48FFC30961A50774B237DCA3F7F /* YouTubePlayer-dummy.m in Sources */,
+				7811D55D97D059EE568394A2EC8058D0 /* YouTubePlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA13AA2745C69635C4B7961C1F2A490 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1679F28DB99AADF3BC7FB3FDDFD4942 /* GalleryCustomClass.swift in Sources */,
+				C2F9D3C72766C75BFB13F591BB55EEC7 /* HorizontalFlowLayout.swift in Sources */,
+				808B1101F6639BC11502D27B637454FA /* UICollectionViewGallery-dummy.m in Sources */,
+				4EC9CD25A1580E70437CB445E72F5643 /* VerticalFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6A5D43E9F9156A0650E516618EC325B6 /* PBXTargetDependency */ = {
+		39322700EDBBDDE06FCA194C65D0F8FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bolts;
+			target = 531B78FD8AD31B542B8001A970D876EC /* Bolts */;
+			targetProxy = 3C31B7E194007D0FE971B6B2B36AD91D /* PBXContainerItemProxy */;
+		};
+		A5D5F4982FC564AE162709B0A70B9BB0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UICollectionViewGallery;
-			target = 3E54CA22C3CCCF47C4C3ADD25CA79FE7 /* UICollectionViewGallery */;
-			targetProxy = 36E37827EFA422CC633531A493E9103B /* PBXContainerItemProxy */;
+			target = 1C1AEA491EB58D1C821D5D2B38551CCE /* UICollectionViewGallery */;
+			targetProxy = 840F3B5C771B21F9AED5175D834401AC /* PBXContainerItemProxy */;
 		};
-		8DF5D1134214A79917B19B2FA7D721D7 /* PBXTargetDependency */ = {
+		A6B35CA53FF58840CDC0DDE75C87DDFE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YouTubePlayer;
-			target = 6D9EFFA99DB9B67BBF03E2FFD8B46B5C /* YouTubePlayer */;
-			targetProxy = 7C320718FEA9014C09D3473C72BD2E5A /* PBXContainerItemProxy */;
+			target = B06E76CCB5CFC0E8B169D8ED2B505E26 /* YouTubePlayer */;
+			targetProxy = A63357B1DE7F2D1A0C9B5165FA8907FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		24BCD89EF67DAD9878947AD3CAF80AAA /* Release */ = {
+		067A54A88CAFB70B7D558FCCA41EFA66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3477F20F485B2C43CAA431D8D44108D /* UICollectionViewGallery.xcconfig */;
+			baseConfigurationReference = 6139E2548916C018EDEFC2B05463F18C /* UICollectionViewGallery.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -421,23 +937,25 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UICollectionViewGallery/UICollectionViewGallery.modulemap";
+				PRODUCT_MODULE_NAME = UICollectionViewGallery;
 				PRODUCT_NAME = UICollectionViewGallery;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		2E54AAA703D448F5EE451CA0200D1501 /* Release */ = {
+		16D2EEF94259F0E06E097620B6637332 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C1AEE6701B0F304C54B011A31D50C4C /* Pods-DogCare.release.xcconfig */;
+			baseConfigurationReference = AE5B23F959D2CA94403A3C42F305342C /* Pods-DogCare.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -457,20 +975,51 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_DogCare;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		308775D9AE90C24988CA0A8B48F2AB85 /* Release */ = {
+		20F7322BA67874F27EF857CB53F66C67 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9432CDC9BB3D42B2F8ABCD67DC7E7BD8 /* YouTubePlayer.xcconfig */;
+			baseConfigurationReference = 58580954B1EC8E1495E35FEC2083F378 /* Bolts.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bolts/Bolts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bolts/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bolts/Bolts.modulemap";
+				PRODUCT_MODULE_NAME = Bolts;
+				PRODUCT_NAME = Bolts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		299416EA195C026AA460DF6A3F515EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC5367CB91742E2B8A21C70AAC81F036 /* YouTubePlayer.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -487,20 +1036,20 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/YouTubePlayer/YouTubePlayer.modulemap";
+				PRODUCT_MODULE_NAME = YouTubePlayer;
 				PRODUCT_NAME = YouTubePlayer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		39C5BC78A31CDE101068C530CAC7FA0F /* Debug */ = {
+		30D948AE62C04225F8DEF8734A4C5A26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -510,6 +1059,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
@@ -531,6 +1081,98 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		3226C3A7A3702C69B69927E6DFAD04FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC5367CB91742E2B8A21C70AAC81F036 /* YouTubePlayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YouTubePlayer/YouTubePlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YouTubePlayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YouTubePlayer/YouTubePlayer.modulemap";
+				PRODUCT_MODULE_NAME = YouTubePlayer;
+				PRODUCT_NAME = YouTubePlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E88537B08ED4D6EB44DBA7BC8D56A35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -555,104 +1197,15 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */ = {
+		9F8F01909E485821D4E399D3D0665CEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		A02BA1AB2BD9F9F528CDB8BD254B82E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9432CDC9BB3D42B2F8ABCD67DC7E7BD8 /* YouTubePlayer.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YouTubePlayer/YouTubePlayer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YouTubePlayer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YouTubePlayer/YouTubePlayer.modulemap";
-				PRODUCT_NAME = YouTubePlayer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C20AED9DA0A3F642B25F83A9AD22951A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3477F20F485B2C43CAA431D8D44108D /* UICollectionViewGallery.xcconfig */;
+			baseConfigurationReference = 6139E2548916C018EDEFC2B05463F18C /* UICollectionViewGallery.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -669,22 +1222,26 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/UICollectionViewGallery/UICollectionViewGallery.modulemap";
+				PRODUCT_MODULE_NAME = UICollectionViewGallery;
 				PRODUCT_NAME = UICollectionViewGallery;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		FED7840793BB34EBC3E33ECC73CF9B47 /* Debug */ = {
+		DEA34827613A4DC6DFC8BB886C6D9661 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA16EFD9FD58A1D93DD661AC4C114C3F /* Pods-DogCare.debug.xcconfig */;
+			baseConfigurationReference = 4B2CAB6E27CF46642DC1E2F62A535D55 /* Pods-DogCare.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -704,52 +1261,93 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_DogCare;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		F2F573FF2D3046DBA66B5B8A0EA1E810 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58580954B1EC8E1495E35FEC2083F378 /* Bolts.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bolts/Bolts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bolts/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bolts/Bolts.modulemap";
+				PRODUCT_MODULE_NAME = Bolts;
+				PRODUCT_NAME = Bolts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0F9C519AF075DE883E4B5491AF96A2BD /* Build configuration list for PBXNativeTarget "UICollectionViewGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				067A54A88CAFB70B7D558FCCA41EFA66 /* Debug */,
+				9F8F01909E485821D4E399D3D0665CEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17EBC9F5759EB02EC962F3FAC032F916 /* Build configuration list for PBXNativeTarget "Bolts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20F7322BA67874F27EF857CB53F66C67 /* Debug */,
+				F2F573FF2D3046DBA66B5B8A0EA1E810 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39C5BC78A31CDE101068C530CAC7FA0F /* Debug */,
-				89C8BB24E37B25BAEEB8FBA01EE05DAF /* Release */,
+				9E88537B08ED4D6EB44DBA7BC8D56A35 /* Debug */,
+				30D948AE62C04225F8DEF8734A4C5A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E61F143C16D93DCADFD5E3BC00D2740 /* Build configuration list for PBXNativeTarget "UICollectionViewGallery" */ = {
+		8739708344A273FE3094FBAEF4A340E2 /* Build configuration list for PBXNativeTarget "Pods-DogCare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C20AED9DA0A3F642B25F83A9AD22951A /* Debug */,
-				24BCD89EF67DAD9878947AD3CAF80AAA /* Release */,
+				16D2EEF94259F0E06E097620B6637332 /* Debug */,
+				DEA34827613A4DC6DFC8BB886C6D9661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B71A67C06A4F894BB93F5C8406F3C51A /* Build configuration list for PBXNativeTarget "YouTubePlayer" */ = {
+		ADB18BC0C10D10F3FDF39EF1F81DF8B6 /* Build configuration list for PBXNativeTarget "YouTubePlayer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A02BA1AB2BD9F9F528CDB8BD254B82E4 /* Debug */,
-				308775D9AE90C24988CA0A8B48F2AB85 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E0234DA95A4A81D764C578C5C05BD206 /* Build configuration list for PBXNativeTarget "Pods-DogCare" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FED7840793BB34EBC3E33ECC73CF9B47 /* Debug */,
-				2E54AAA703D448F5EE451CA0200D1501 /* Release */,
+				299416EA195C026AA460DF6A3F515EBD /* Debug */,
+				3226C3A7A3702C69B69927E6DFAD04FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
